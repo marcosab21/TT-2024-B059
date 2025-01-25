@@ -1,0 +1,80 @@
+\documentclass{ipn}
+
+\usepackage{ipnstyle}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bookmark}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{times}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{chemformula}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{pifont}
+\usepackage{newunicodechar}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{ragged2e}
+\usepackage{pdfpages}
+\newunicodechar{✓}{\ding{52}}
+\newunicodechar{✗}{\ding{56}}
+% \usepackage{cite}
+
+
+\author{García Aguayo Marcos Martí Sandino Mictlantecuhtli}
+\title{Prototipo de Simulador de Laboratorio de Química Inorgánica en Realidad Virtual}
+\schoolname{Escuela Superior de Cómputo}
+\degree{Ingeniería en Sistemas Computacionales}
+\advisor{M. en E. Saul De La O Torres}
+\coadvisor{Dr. Gabriel Sepúlveda Cervantes}
+\academicyear{Diciembre 2024}
+
+\hypersetup{
+    colorlinks=false,
+    pdfauthor={García Aguayo Marcos Martí Sandino Mictlantecuhtli},
+    pdftitle={Prototipo de Simulador de Laboratorio de Química Inorgánica en Realidad Virtual},
+    pdfsubject={Thesis},
+    pdfkeywords={Química Inorgánica, Realidad Virtual, Simulador, Software Interactivo}
+    pdfproducer={Latex with hyperref},
+    pdfcreator={pdflatex}
+}
+
+\addbibresource{./references.bib}
+\pagestyle{headings}
+
+\begin{document}
+\frontmatter
+    \maketitle
+    \input{frontmatter/caratula}
+    \input{frontmatter/advertisement}
+    \input{frontmatter/acknowledgements}
+    \pagestyle{empty}
+    \input{frontmatter/Carta_Autorizacion}
+    \pagestyle{headings}
+    \tableofcontents
+    \listoffigures
+    \listoftables
+
+\mainmatter
+    \include{chapters/chapter01}
+    \include{chapters/chapter02}
+    \include{chapters/chapter03}
+    \include{chapters/chapter04}
+    \include{chapters/chapter05}
+    \include{chapters/chapter06}
+    \include{chapters/chapter07}
+    \include{chapters/chapter08}
+
+    \appendix
+        \include{chapters/appendixA}
+        \include{chapters/appendixB}
+\backmatter
+    \bookmarksetup{startatroot}
+    \printbibliography[heading=bibintoc]
+\end{document}
