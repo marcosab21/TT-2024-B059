@@ -1,0 +1,753 @@
+\chapter{Scripts Relevantes}\label{app:Scripts}
+Este apéndice contiene los scripts más relevantes utilizados en la implementación del simulador. Cada uno de ellos desempeña un papel específico en la lógica, interacción o control de las escenas del simulador. A continuación, se presenta una breve descripción de cada script.
+\section{MenuController.cs}\label{script:MenuController}
+Este script se encarga de gestionar la lógica principal del menú del \textbf{Hub}, permitiendo al usuario seleccionar entre el tutorial y los experimentos. También interactúa con la máquina de estados finita (FSM) para manejar las transiciones entre escenas y actualiza la interfaz de usuario con los datos correspondientes.
+\begin{minted}[linenos, breaklines, fontsize=\small]{csharp}
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro; 
+
+public class MenuController : MonoBehaviour
+{
+    private Text Tittle;
+    private TextMeshProUGUI Data;
+    private Image Reference;
+    [SerializeField] private PlayMakerFSM fsm;
+    private string experiment = "Experiment_";
+    private ExperimentData dataSelected;
+
+    public void assign_fields(GameObject tittle, GameObject data, GameObject reference)
+    {
+        if(tittle == null)
+        {
+            Debug.LogError("Tittle");
+        }
+        Tittle = tittle.GetComponent<Text>();
+        if(data == null)
+        {
+            Debug.LogError("Data");
+        }
+        Data = data.GetComponent<TextMeshProUGUI>();
+        if(reference == null)
+        {
+            Debug.LogError("Reference");
+        }
+        Reference = reference.GetComponent<Image>();
+    }
+
+    public void SelectedData(ExperimentData selected)
+    {
+        if (selected != null) 
+        {
+            dataSelected = selected;
+        }
+        else
+        {
+            Debug.LogError("Selected data is null.");
+        }
+    }
+
+    public void change_Data()
+    {
+        if(Tittle != null && Data != null && Reference != null && dataSelected != null)
+        {
+            Tittle.text = dataSelected.getName;
+            Data.text = dataSelected.getDescription;
+            Reference.sprite = dataSelected.getReference;
+        }
+        else
+        {
+            Debug.LogError("Missing references or dataSelected is null.");
+        }
+    }
+
+    public enum FSMEvent
+    {
+        Tutorial_Data,
+        Experiment_1_Data,
+        Experiment_2_Data,
+        Experiment_3_Data,
+        Experiment_4_Data,
+        Return_Hub,
+        Return_Experiments_Data,
+        Experiments_Data
+    }
+
+    private FSMEvent GetFSMEventByIndex(int index)
+    {
+        FSMEvent[] values = (FSMEvent[])Enum.GetValues(typeof(FSMEvent));
+        
+        if (index == 6)
+        {
+            int aux = dataSelected.getName == "Tutorial" ? 5 : 6;
+            return values[aux];
+        }
+
+        if (index >= 0 && index < values.Length)
+        {
+            return values[index]; // Devuelve el valor correspondiente al índice
+        }
+        else
+        {
+            Debug.LogError("Índice fuera de rango");
+            return FSMEvent.Return_Hub;
+        }
+    }
+
+    // Función para enviar un evento al FSM directamente usando el enum
+    public void SendFSMEventByIndex(int index)
+    {
+        FSMEvent eventToSend = GetFSMEventByIndex(index);
+        if (fsm != null)
+        {
+            Debug.Log(eventToSend.ToString());
+            fsm.SendEvent(eventToSend.ToString());
+        }
+    }
+
+    public void change_scene()
+    {
+        string name_scene = dataSelected.getName == "Tutorial" ? "Tutorial" : experiment+dataSelected.getNo_Experiment;
+
+        fsm.SendEvent(name_scene);
+    }
+}
+\end{minted}
+\newpage
+\section{Experiment\_1\_Manager.cs}\label{script:Experiment1Manager}
+Este script controla la lógica específica del primer experimento, incluyendo la secuencia de sustancias esperadas y las transiciones en la FSM según el progreso del usuario. También gestiona cambios visuales, como el color de los objetos, en función del estado del experimento.
+\begin{minted}[linenos, breaklines, fontsize=\small]{csharp}
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Experiment_1_Manager : MonoBehaviour, ISubstanceManager
+{
+    [SerializeField] private List<string> substanceSequence; // Secuencia esperada de sustancias
+    [SerializeField] private List<string> fsmEvents; // Eventos FSM asociados a la secuencia
+    [SerializeField] private string fsmName; // Nombre del FSM específico
+    [SerializeField] private List<Color> targetColors; // Colores para cada estado
+    [SerializeField] private List<float> lerpDurations; // Duraciones de interpolación para cada estado
+    private PlayMakerFSM fsm;
+    private Dictionary<SubstanceTracker, int> trackerStates = new Dictionary<SubstanceTracker, int>();
+    
+    private void Awake() 
+    {
+        // Obtener el FSM en el mismo objeto por nombre
+        var fsmArray = GetComponents<PlayMakerFSM>();
+        fsm = System.Array.Find(fsmArray, f => f.FsmName == fsmName);
+        if (fsm == null)
+        {
+            Debug.LogWarning($"FSM con el nombre '{fsmName}' no encontrado en el mismo objeto.");
+        }
+    }
+    public void RegisterTracker(SubstanceTracker tracker)
+    {
+        if (!trackerStates.ContainsKey(tracker))
+        {
+            trackerStates[tracker] = 0;
+        }
+    }
+
+    public void OnSubstanceAdded(SubstanceTracker tracker, string substance)
+    {
+        if (!trackerStates.ContainsKey(tracker)) return;
+
+        int currentState = trackerStates[tracker];
+        if (currentState < substanceSequence.Count && substance == substanceSequence[currentState])
+        {
+            trackerStates[tracker]++;
+            TriggerFSMEvent(tracker, fsmEvents[currentState]);
+
+            if (currentState > 0 && currentState <= targetColors.Count)
+            {
+                ChangeColorForState(tracker, currentState - 1); // Ajusta el índice para coincidir con la lista
+            }
+        }
+    }
+
+    private void TriggerFSMEvent(SubstanceTracker tracker, string eventName)
+    {
+        if (fsm != null)
+        {
+            fsm.SendEvent(eventName);
+            Debug.Log($"Event '{eventName}' triggered for tracker '{tracker.name}'");
+        }
+    }
+
+    private void ChangeColorForState(SubstanceTracker tracker, int stateIndex)
+    {
+        GameObject trackerObject = tracker.gameObject;
+        ColorChangeController colorController = trackerObject.GetComponent<ColorChangeController>();
+
+        if (colorController != null)
+        {
+            colorController.StartColorChange(targetColors[stateIndex], lerpDurations[stateIndex]);
+            Debug.Log($"Cambio de color iniciado para '{trackerObject.name}' con el color {targetColors[stateIndex]} y duración {lerpDurations[stateIndex]}.");
+        }
+        else
+        {
+            Debug.LogWarning($"El objeto '{trackerObject.name}' no tiene un componente ColorChangeController.");
+        }
+    }
+}
+\end{minted}
+\section{Experiment\_2\_Manager.cs}\label{script:Experiment2Manager}
+El gestor del segundo experimento valida las combinaciones de sustancias introducidas por el usuario y maneja las interacciones relacionadas con la temperatura, como el calentamiento y enfriamiento de los materiales. Utiliza la FSM para desencadenar eventos según el comportamiento de los reactivos.
+\begin{minted}[linenos, breaklines, fontsize=\small]{csharp}
+using System.Collections.Generic;
+using UnityEngine;
+using System.Linq;
+
+public class Experiment_2_Manager : MonoBehaviour, ISubstanceManager
+{
+    [SerializeField] private List<string> validCombination; // Lista de sustancias esperadas para una mezcla
+    [SerializeField] private string fsmName; // Nombre del FSM específico
+    private PlayMakerFSM fsm;
+    private Dictionary<SubstanceTracker, HashSet<string>> trackerSubstances  = new Dictionary<SubstanceTracker, HashSet<string>>();
+    private Dictionary<SubstanceTracker, float> boilingTimeCounters = new Dictionary<SubstanceTracker, float>();
+    private Dictionary<SubstanceTracker, bool> boilingFlags = new Dictionary<SubstanceTracker, bool>();
+    private float boilingDelay = 10f;
+
+    private void Awake() 
+    {
+        // Obtener el FSM en el mismo objeto por nombre
+        var fsmArray = GetComponents<PlayMakerFSM>();
+        fsm = System.Array.Find(fsmArray, f => f.FsmName == fsmName);
+        if (fsm == null)
+        {
+            Debug.LogWarning($"FSM con el nombre '{fsmName}' no encontrado en el mismo objeto.");
+        }
+    }
+    public void RegisterTracker(SubstanceTracker tracker)
+    {
+        if (!trackerSubstances.ContainsKey(tracker))
+        {
+            trackerSubstances[tracker] = new HashSet<string>();
+        }
+        // Inicializar el contador de tiempo para este tracker
+        if (!boilingTimeCounters.ContainsKey(tracker))
+        {
+            boilingTimeCounters[tracker] = 0f;
+        }
+
+        if (!boilingFlags.ContainsKey(tracker))
+        {
+            boilingFlags[tracker] = false;
+        }
+    }
+
+    public void OnSubstanceAdded(SubstanceTracker tracker, string substance)
+    {
+        if (!trackerSubstances.ContainsKey(tracker)) return;
+
+        // Agregar la sustancia al conjunto de sustancias del tracker
+        trackerSubstances[tracker].Add(substance);
+
+        // Comprobar si la combinación es válida
+        if (IsCombinationValid(tracker.GetSubstances()))
+        {
+            fsm.SendEvent("goCalentamiento");
+            PlayMakerFSM playMakerFSM = tracker.gameObject.GetComponent<PlayMakerFSM>();
+            playMakerFSM.SendEvent("Smoke");
+        }
+    }
+
+    private bool IsCombinationValid(List<string> substances)
+    {
+        // Validar estrictamente
+        bool isValid = substances.Count == validCombination.Count 
+                    && !substances.Except(validCombination).Any() 
+                    && !validCombination.Except(substances).Any();
+
+        return isValid;
+    }
+
+    private void HandleTemperature(float temperature, float boilingPoint, SubstanceTracker tracker)
+    {
+        // Realizar acciones dependiendo de la temperatura
+        if (temperature > boilingPoint && !boilingFlags[tracker])
+        {
+            // Incrementar el contador de tiempo específico para este tracker
+            boilingTimeCounters[tracker] += Time.deltaTime;
+
+            if (boilingTimeCounters[tracker] >= boilingDelay)
+            {
+                fsm.SendEvent("goEnfriamiento");
+                boilingFlags[tracker] = true;
+            }
+        }
+        else if (temperature < boilingPoint)
+        {
+            PlayMakerFSM playMakerFSM = tracker.gameObject.GetComponent<PlayMakerFSM>();
+            boilingTimeCounters[tracker] -= Time.deltaTime;
+
+            if(boilingTimeCounters[tracker] <= 0 && boilingFlags[tracker])
+            {
+                fsm.SendEvent("goExplicacion");
+            }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        // Comprobar la temperatura de cada tracker de manera periódica
+        foreach (var tracker in trackerSubstances.Keys)
+        {
+            TemperatureController temperatureController = tracker.gameObject.GetComponent<TemperatureController>();
+            if (temperatureController != null && (temperatureController.GetFlag() ||  boilingFlags[tracker]))
+            {
+                // Comprobar la temperatura actual y ejecutar las acciones basadas en la temperatura
+                HandleTemperature(temperatureController.GetCurrentTemperature(), temperatureController.GetBoilingPoint(), tracker);
+            }
+        }
+    }
+}
+\end{minted}
+\newpage
+\section{Experiment\_3\_Manager.cs}\label{script:Experiment3Manager}
+Este script se enfoca en validar combinaciones químicas en el tercer experimento, gestionando además el nivel de líquido en el recipiente. Supervisa cambios en el shader asociado al material del objeto y dispara eventos en la FSM basándose en el progreso del usuario.
+\begin{minted}[linenos, breaklines, fontsize=\small]{csharp}
+using System.Collections.Generic;
+using UnityEngine;
+using System.Linq;
+
+public class Experiment_3_Manager : MonoBehaviour, ISubstanceManager
+{
+    [SerializeField] private List<string> validCombination; // Lista de sustancias esperadas para una mezcla
+    [SerializeField] private string fsmName; // Nombre del FSM específico
+    [SerializeField] private Renderer objectRenderer;
+    private float level;
+    private bool level_reached = false;
+    private PlayMakerFSM fsm;
+    private Dictionary<SubstanceTracker, HashSet<string>> trackerSubstances  = new Dictionary<SubstanceTracker, HashSet<string>>();
+
+    private void Awake() 
+    {
+        // Obtener el FSM en el mismo objeto por nombre
+        var fsmArray = GetComponents<PlayMakerFSM>();
+        fsm = System.Array.Find(fsmArray, f => f.FsmName == fsmName);
+        if (fsm == null)
+        {
+            Debug.LogWarning($"FSM con el nombre '{fsmName}' no encontrado en el mismo objeto.");
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if(!level_reached)
+            levelTarget();
+    }
+
+    public void RegisterTracker(SubstanceTracker tracker)
+    {
+        if (!trackerSubstances.ContainsKey(tracker))
+        {
+            trackerSubstances[tracker] = new HashSet<string>();
+        }
+    }
+
+    public void OnSubstanceAdded(SubstanceTracker tracker, string substance)
+    {
+        if (!trackerSubstances.ContainsKey(tracker)) return;
+
+        // Agregar la sustancia al conjunto de sustancias del tracker
+        trackerSubstances[tracker].Add(substance);
+
+        // Comprobar si la combinación es válida
+        if (IsCombinationValid(tracker.GetSubstances()))
+        {
+            fsm.SendEvent("Reaccion_Exotermica");
+            PlayMakerFSM playMakerFSM = tracker.gameObject.GetComponent<PlayMakerFSM>();
+            playMakerFSM.SendEvent("Smoke");
+        }
+    }
+
+    private bool IsCombinationValid(List<string> substances)
+    {
+        // Validar estrictamente
+        bool isValid = substances.Count == validCombination.Count 
+                    && !substances.Except(validCombination).Any() 
+                    && !validCombination.Except(substances).Any();
+
+        return isValid;
+    }
+
+    private void levelTarget()
+    {
+        level = objectRenderer.material.GetFloat("_Fill");
+        if(level >= -0.045f)
+        {
+            fsm.SendEvent("next");
+            level_reached = true;
+        }
+    }
+}
+\end{minted}
+\newpage
+\section{Experiment\_4\_Manager.cs}\label{script:Experiment4Manager}
+El cuarto gestor valida combinaciones químicas específicas para el experimento final. Supervisa la interacción del usuario con las sustancias y utiliza la FSM para avanzar en el flujo del experimento.
+\begin{minted}[linenos, breaklines, fontsize=\small]{csharp}
+using System.Collections.Generic;
+using UnityEngine;
+using System.Linq;
+
+public class Experiment_4_Manager : MonoBehaviour, ISubstanceManager
+{
+    [SerializeField] private List<string> validCombination; // Lista de sustancias esperadas para una mezcla
+    [SerializeField] private string fsmName; // Nombre del FSM específico
+    private PlayMakerFSM fsm;
+    private Dictionary<SubstanceTracker, HashSet<string>> trackerSubstances  = new Dictionary<SubstanceTracker, HashSet<string>>();
+
+    private void Awake() 
+    {
+        // Obtener el FSM en el mismo objeto por nombre
+        var fsmArray = GetComponents<PlayMakerFSM>();
+        fsm = System.Array.Find(fsmArray, f => f.FsmName == fsmName);
+        if (fsm == null)
+        {
+            Debug.LogWarning($"FSM con el nombre '{fsmName}' no encontrado en el mismo objeto.");
+        }
+    }
+
+    public void RegisterTracker(SubstanceTracker tracker)
+    {
+        if (!trackerSubstances.ContainsKey(tracker))
+        {
+            trackerSubstances[tracker] = new HashSet<string>();
+        }
+    }
+
+    public void OnSubstanceAdded(SubstanceTracker tracker, string substance)
+    {
+        if (!trackerSubstances.ContainsKey(tracker)) return;
+
+        // Agregar la sustancia al conjunto de sustancias del tracker
+        trackerSubstances[tracker].Add(substance);
+
+        // Comprobar si la combinación es válida
+        if (IsCombinationValid(tracker.GetSubstances()))
+        {
+            fsm.SendEvent("next");
+        }
+    }
+
+    private bool IsCombinationValid(List<string> substances)
+    {
+        // Validar estrictamente
+        bool isValid = substances.Count == validCombination.Count 
+                    && !substances.Except(validCombination).Any() 
+                    && !validCombination.Except(substances).Any();
+
+        return isValid;
+    }
+}
+\end{minted}
+\section{SubstanceTracker.cs}\label{script:SubstanceTracker}
+Este script gestiona el seguimiento de sustancias en el simulador, permitiendo detectar interacciones entre objetos y registrar las sustancias que contiene cada objeto. También puede compartir sustancias entre objetos y conectarse con el gestor correspondiente a la escena activa.
+\begin{minted}[linenos, breaklines, fontsize=\small]{csharp}
+    using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SubstanceTracker : MonoBehaviour
+{
+    // Lista de tags que representan las sustancias contenidas en este objeto
+    [SerializeField] private List<string> containedSubstances = new List<string>();
+    [SerializeField] private LayerMask allowedLayers;
+    [SerializeField] private PlayMakerFSM fsm;
+    [SerializeField] private Vector3 startPosition;
+    [SerializeField] private Vector3 targetPositionOffset; // Offset para la posición del hermano
+    [SerializeField] private Vector3 targetRotationEuler;
+    private ISubstanceManager manager;
+
+    private void Awake()
+    {
+        FindAndConnectManager();
+        // Verifica si el objeto tiene un tag asignado antes de llamar a AddSubstance
+        if (gameObject.tag != "Untagged")
+        {
+            AddSubstance(gameObject.tag);
+        }
+    }
+    
+    private void FindAndConnectManager()
+    {
+         // Determinar el tipo de manager según la escena actual
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        switch (currentSceneName)
+        {
+            case "Experiment_1":
+                manager = FindObjectOfType<Experiment_1_Manager>();
+                break;
+            case "Experiment_2":
+                manager = FindObjectOfType<Experiment_2_Manager>();
+                break;
+            case "Experiment_3":
+                manager = FindObjectOfType<Experiment_3_Manager>();
+                break;
+            case "Experiment_4":
+                manager = FindObjectOfType<Experiment_4_Manager>();
+                break;
+            default:
+                Debug.LogError($"No se encontró un manager en la escena '{currentSceneName}'.");
+                break;
+        }
+
+        if (manager != null)
+        {
+            ConnectToManager(manager); // Conexión al manager
+        }
+    }
+
+    // Método para agregar una nueva sustancia a la lista
+    public void AddSubstance(string substanceTag)
+    {
+        if (!containedSubstances.Contains(substanceTag))
+        {
+            containedSubstances.Add(substanceTag);
+            // Notificar al manager cuando se añade una nueva sustancia
+            manager?.OnSubstanceAdded(this, substanceTag);
+        }
+    }
+
+    // Método para compartir sustancias con otro objeto
+    public void ShareSubstances(SubstanceTracker targetTracker)
+    {
+        foreach (string substance in containedSubstances)
+        {
+            targetTracker.AddSubstance(substance);
+        }
+    }
+
+    // Devuelve la lista de sustancias contenidas
+    public List<string> GetSubstances()
+    {
+        return containedSubstances;
+    }
+
+    // Detecta interacciones con objetos en el Layer permitido usando un Trigger
+    private void OnTriggerEnter(Collider other)
+    {
+        // Verificar si el objeto pertenece al Layer permitido
+        if ((allowedLayers.value & (1 << other.gameObject.layer)) != 0)
+        {
+            AddSubstance(other.gameObject.tag);
+
+            // Cambiar el objeto colisionado a hermano
+            MakeObjectSibling(other.gameObject);
+
+            if (fsm != null)
+            {
+                fsm.SendEvent("Fog");
+            }
+        }
+    }
+
+    // Método para conectar este tracker con un manager externo
+    public void ConnectToManager<T>(T manager) where T : ISubstanceManager
+    {
+        manager.RegisterTracker(this);
+    }
+
+    // Método para hacer que el objeto colisionado sea hermano del objeto actual
+    private void MakeObjectSibling(GameObject otherObject)
+    {
+        Transform originalParent = otherObject.transform.parent;
+
+        originalParent.SetParent(transform.parent);
+
+        // Desactivar el Rigidbody y los Colliders de originalParent
+        Rigidbody rb = originalParent.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = true; // Desactivar la física, si es necesario
+            rb.useGravity = false; // Desactivar la gravedad
+        }
+
+        // Desactivar todos los colliders en el originalParent
+        Collider[] colliders = originalParent.GetComponentsInChildren<Collider>();
+        foreach (Collider col in colliders)
+        {
+            if (!col.isTrigger) // Verifica si el collider no es un trigger
+            {
+                col.enabled = false;
+            }
+        }
+
+        // Definir la rotación antes de la interpolación de posición
+        Quaternion targetRotation = Quaternion.Euler(targetRotationEuler); // Convertir los valores serializados a Quaternion
+        originalParent.localRotation = targetRotation;
+        Debug.Log(originalParent.localRotation);
+
+        // Realizar la transición de posición usando una corutina para un movimiento suave
+        StartCoroutine(ChangePositionSmoothly(originalParent, 3f)); // 3 segundo de transición
+    }
+    // Corutina para hacer un cambio suave de posición
+    private IEnumerator ChangePositionSmoothly(Transform originalParent, float transitionDuration)
+    {
+        //Vector3 startPosition = originalParent.localPosition;
+
+        float timeElapsed = 0f;
+
+        // Realizar la interpolación hasta que el tiempo de transición se haya completado
+        while (timeElapsed < transitionDuration)
+        {
+            // Interpolamos la posición de manera suave
+            originalParent.localPosition = Vector3.Lerp(startPosition, targetPositionOffset, timeElapsed / transitionDuration);
+
+            timeElapsed += Time.deltaTime;
+            yield return null; // Esperamos hasta el siguiente frame
+        }
+
+        // Aseguramos que la posición final sea exactamente la targetPositionOffset
+        originalParent.localPosition = targetPositionOffset;
+    }
+}
+\end{minted}
+\newpage
+\section{Liquid\_Level.cs}\label{script:Liquid_Level}
+Este script controla el nivel de líquido dentro de un recipiente. Ajusta dinámicamente el nivel en función de los ángulos de inclinación del objeto, simulando derrames o llenado. También activa y desactiva partículas asociadas con el comportamiento del líquido, y se integra con la FSM para manejar eventos.
+\begin{minted}[linenos, breaklines, fontsize=\small]{csharp}
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using HutongGames.PlayMaker; // Importa la API de PlayMaker
+
+public class Liquid_Level : MonoBehaviour
+{
+    // Referencia al Renderer del GameObject para manipular propiedades del shader
+    [SerializeField] private Renderer objectRenderer;
+    [SerializeField] private float start_level;
+    [SerializeField] private float max_angle;
+    [SerializeField] private float min_level;
+    [SerializeField] private float max_level;
+    [SerializeField] private float m_level;
+    [SerializeField] private GameObject container;
+    [SerializeField] private GameObject particles; // Referencia al sistema de partículas
+    [SerializeField] private PlayMakerFSM fsm;
+    private float level; // Nivel actual del agua
+    private float new_level; // Nuevo nivel que se ajusta en el shader
+    private float spillAngle; // Ángulo en el que comienza el derrame
+    private float spillSpeed = 0.01f; // Velocidad base de vaciado por grado de diferencia
+    private float spillRate; // Tasa de derrame
+    private float xAngle, zAngle; // Ángulos de inclinación en los ejes X y Z
+    private Fill_detection fill_detection; // Referencia al script de detección de llenado
+
+    // Se llama cuando el objeto es activado
+    private void OnEnable() {
+        // Obtener el Renderer para controlar el nivel del agua en el shader
+        objectRenderer = GetComponent<Renderer>();
+        objectRenderer.material.SetFloat("_Fill", start_level);// Inicializar el nivel de agua
+        new_level = objectRenderer.material.GetFloat("_Fill"); 
+        fill_detection = particles.GetComponent<Fill_detection>(); // Obtener el script de detección de llenado
+    }
+
+    // Se ejecuta cada frame fijo
+    void FixedUpdate()
+    {
+        level = objectRenderer.material.GetFloat("_Fill"); // Actualizar el nivel del agua
+        spilling(); // Llamar al método de derrame
+    }
+ 
+    // Controla el derrame del agua basado en el ángulo de inclinación
+    void spilling ()
+    {
+        // Obtener los ángulos X y Z, ajustándolos al rango de -180 a 180
+        xAngle = Mathf.DeltaAngle(0f, container.transform.eulerAngles.x); 
+        zAngle = Mathf.DeltaAngle(0f, container.transform.eulerAngles.z);
+        // Si el nivel del agua está por encima del mínimo permitido
+        if (level > min_level)
+        {
+            spillAngle = CalculateSpillAngle(level); // Calcular el ángulo en que ocurre el derrame
+            // Verificar si el ángulo actual en X o Z supera el ángulo de derrame
+            if (IsSpilling(spillAngle))
+            {
+                // Calcular la diferencia entre el ángulo actual y el ángulo de derrame
+                float angleDifference = Mathf.Abs(Mathf.DeltaAngle(CalculateCompositeAngle(), spillAngle));
+                spillRate = spillSpeed * angleDifference; // Calcular la tasa de derrame
+                // Reducir el nivel de agua según la tasa de derrame
+                downLevel(spillRate);
+                fsm.SendEvent("Activate_Particles");
+                fill_detection.detection(spillRate); // Detectar llenado de otros objetos
+            }
+            else
+            {
+                // Si no hay derrame, desactivar las partículas
+                fsm.SendEvent("Deactivate_Particles");
+            }
+        }
+        else
+        {
+            // Asegurar que el nivel no baje por debajo del mínimo y desactivar partículas
+            objectRenderer.material.SetFloat("_Fill", min_level);
+            fsm.SendEvent("Deactivate_Particles");
+        }
+    }
+
+    public void downLevel(float downRate)
+    {
+        if (level > min_level)
+        {
+            // Reducir el nivel de agua según la tasa de vaciado
+            new_level -= downRate * Time.fixedDeltaTime / 25f;
+            objectRenderer.material.SetFloat("_Fill", new_level); // Asignar el nuevo nivel al shader
+        }
+        else
+        {
+            // Asegurar que el nivel no baje por debajo del mínimo y desactivar partículas
+            objectRenderer.material.SetFloat("_Fill", min_level);
+        }
+    }
+
+    // Método que aumenta el nivel de agua según la tasa de llenado
+    public void filling_out(float fillRate)
+    {
+        if (level < max_level + 0.01f) // Limitar el nivel de llenado
+        {
+            new_level += fillRate * Time.fixedDeltaTime / 25f; // Incrementar el nivel del agua
+            objectRenderer.material.SetFloat("_Fill", new_level); // Actualizar el nivel en el shader
+        }
+    }
+
+    // Calcula el ángulo a partir del cual comienza el derrame, basado en el nivel del agua
+    private float CalculateSpillAngle(float level)
+    {
+        if (level == min_level)
+        {
+            return 90f; // Si está vacío, el matraz no se derrama
+        }
+        else if (level < m_level)
+        {
+            return max_angle; // Con niveles bajos, el ángulo es mayor
+        }
+        else if (level >= max_level)
+        {
+            return 1f; // Si está lleno, el derrame ocurre de inmediato
+        }
+        else
+        {
+            // Interpolación lineal entre ángulos de derrame según el nivel
+            float normalizedFactor = (level - m_level) / (max_level + 0.1f);
+            return Mathf.Lerp(max_angle, 0f, normalizedFactor);
+        }
+    }
+
+    // Verifica si el ángulo actual está por encima del ángulo de derrame
+    private bool IsSpilling(float spillAngle)
+    {
+        // Calcula la diferencia compuesta de los ángulos X y Z con el ángulo de derrame
+        float compositeAngle = CalculateCompositeAngle();
+        return compositeAngle > spillAngle || compositeAngle > 360f - spillAngle;
+    }
+
+    private float CalculateCompositeAngle()
+    {
+        return Mathf.Sqrt(Mathf.Pow(xAngle, 2f) + Mathf.Pow(zAngle, 2f));
+    }
+}
+\end{minted}
