@@ -57,3 +57,6 @@
 
 #PPTX
 *.pptx filter=lfs diff=lfs merge=lfs -text
+
+#APK
+*.apk filter=lfs diff=lfs merge=lfs -text
