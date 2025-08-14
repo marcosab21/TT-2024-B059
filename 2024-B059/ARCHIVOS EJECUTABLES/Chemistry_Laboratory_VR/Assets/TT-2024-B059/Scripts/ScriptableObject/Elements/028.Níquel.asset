@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "028.N\xEDquel"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 1430505731632104008, guid: 660ea2f8568b59f40b2c02955ede0082, type: 3}
+  Name: "N\xEDquel"
+  Symbol: Ni
+  Atomic_Number: 28
+  Atomic_Mass: 58.6934
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Ar] 4s2 3d8'
+  Melting_Point: 1455
+  Boiling_Point: 2913
+  Phase: "S\xF3lido"
+  Oxidation_States: 0300000002000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: 6bb3229fb2c8cdb4b9fbba5689c446cc, type: 3}
+  Description: "Tiene una amplia gama de usos industriales, desde la fabricaci\xF3n
+    de acero inoxidable hasta la producci\xF3n de bater\xEDas recargables y catalizadores
+    qu\xEDmicos. \r\nEs un metal maleable y resistente a la corrosi\xF3n, lo que
+    lo hace valioso en aplicaciones marinas y qu\xEDmicas. \r\nAdem\xE1s, se utiliza
+    en la acu\xF1aci\xF3n de monedas y joyer\xEDa debido a su brillo plateado. \r\nEs
+    esencial en la producci\xF3n de aleaciones resistentes al calor para turbinas
+    de gas y motores de aviaci\xF3n. \r\nEn la industria electr\xF3nica, se emplea
+    en la fabricaci\xF3n de componentes como conectores y alambres debido a su excelente
+    conductividad el\xE9ctrica."

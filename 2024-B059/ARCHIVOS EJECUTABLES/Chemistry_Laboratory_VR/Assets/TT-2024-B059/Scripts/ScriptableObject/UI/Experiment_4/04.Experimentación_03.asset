@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "04.Experimentaci\xF3n_03"
+  m_EditorClassIdentifier: 
+  Tittle: Tapar con el segundo bloque de Hielo Seco
+  Data: "Una vez que el magnesio est\xE9 encendido, toma el segundo bloque de Di\xF3xido
+    de Carbono y col\xF3calo encima del magnesio ardiente para sellar el \xE1rea
+    y observar c\xF3mo la reacci\xF3n se desarrolla."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: d8c1f681175ca7846b734b17a8e812b0, type: 3}

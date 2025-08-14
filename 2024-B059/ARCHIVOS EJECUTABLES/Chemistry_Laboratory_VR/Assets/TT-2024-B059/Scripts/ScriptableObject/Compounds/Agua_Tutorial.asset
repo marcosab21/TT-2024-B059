@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf6f64c2d5fbf14b9b0e87b7407a1fc, type: 3}
+  m_Name: Agua_Tutorial
+  m_EditorClassIdentifier: 
+  componentNames:
+  - "001.Hidr\xF3geno_(H)"
+  - "008.Ox\xEDgeno_(O)"
+  result: {fileID: 3036356954865662741, guid: a2de48d94960bca498ce8f6a018c3f8e, type: 3}
+  Name: Oxidano
+  Common_Denomination: Agua
+  Formula: H<sub>2</sub>O
+  Use: "El agua se usa para beber, riego, refrigeraci\xF3n, preparaci\xF3n de alimentos
+    y limpieza."
+  Natural_Distribution: "Se encuentra en oc\xE9anos, r\xEDos, lagos, glaciares y
+    como vapor en la atm\xF3sfera."
+  Link_Type: Covalente Polar
+  Point1: 0
+  Point2: 100
+  Type_Point1: "Fusi\xF3n"
+  Type_Point2: "Ebullici\xF3n"
+  Phase: "L\xEDquido"
+  I_Compound: {fileID: 21300000, guid: a42cb00caa273804da6918e0af250122, type: 3}

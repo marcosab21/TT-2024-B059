@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 02.Balanceo
+  m_EditorClassIdentifier: 
+  Tittle: Antes de comenzar el experimento
+  Data: "Es esencial entender la reacci\xF3n qu\xEDmica que se lleva a cabo\nEl Magnesio
+    reacciona con di\xF3xido de carbono.\nSe producen \xF3xido de magnesio y carbono
+    como productos.\nEl magnesio pierde electrones (se oxida), mientras que el di\xF3xido
+    de carbono gana electrones (se reduce), en una reacci\xF3n redox."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: f29e2cdbfe70a7a4da7c7595ffd3d79e, type: 3}

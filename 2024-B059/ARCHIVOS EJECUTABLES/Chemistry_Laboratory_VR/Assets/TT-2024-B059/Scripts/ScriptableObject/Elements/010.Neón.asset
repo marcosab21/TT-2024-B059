@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "010.Ne\xF3n"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 3256162720647431026, guid: 364258267a85f0e4f9fed1b993b95802, type: 3}
+  Name: "Ne\xF3n"
+  Symbol: Ne
+  Atomic_Number: 10
+  Atomic_Mass: 20.1797
+  Classification: Gases Nobles
+  Electron_Configuration: '[He] 2s2 2p6'
+  Melting_Point: -248.59
+  Boiling_Point: -246.08
+  Phase: Gas
+  Oxidation_States: 00000000
+  Effect: {fileID: 2100000, guid: ea83c4266d0d35a428c045e5f53c4816, type: 2}
+  I_Element: {fileID: 21300000, guid: d78d7e6992d4a8f42af80646d04d7388, type: 3}
+  Description: "\rEl ne\xF3n es un gas noble utilizado en l\xE1mparas de ne\xF3n
+    y dispositivos de iluminaci\xF3n debido a su brillo caracter\xEDstico. \r\nTambi\xE9n
+    se emplea en l\xE1seres, indicadores luminosos y tubos de televisi\xF3n. \r\nEs
+    abundante en la atm\xF3sfera terrestre pero se obtiene principalmente de la destilaci\xF3n
+    fraccionada del aire. \r\nSu color anaranjado-rojizo es muy visible en publicidad
+    y se\xF1alizaci\xF3n. \nAdem\xE1s, se utiliza en la fabricaci\xF3n de l\xE1mparas
+    de descarga, indicadores luminosos y en la investigaci\xF3n de la fusi\xF3n nuclear.
+    \r\nEs un elemento inerte que no forma compuestos qu\xEDmicos f\xE1cilmente."

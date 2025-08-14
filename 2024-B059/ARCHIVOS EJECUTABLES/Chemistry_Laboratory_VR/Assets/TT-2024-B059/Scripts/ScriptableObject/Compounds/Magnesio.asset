@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf6f64c2d5fbf14b9b0e87b7407a1fc, type: 3}
+  m_Name: Magnesio
+  m_EditorClassIdentifier: 
+  componentNames:
+  - 012.Magnesio_(Mg)
+  result: {fileID: 3140289012928864709, guid: 15d4d45a505422d458ba744adf789339, type: 3}
+  Name: Magnesio
+  Common_Denomination: Magnesio
+  Formula: Mg
+  Use: "Se usa en aleaciones ligeras, fuegos artificiales, suplementos, anti\xE1cidos
+    y como reductor qu\xEDmico."
+  Natural_Distribution: Abunda en minerales como dolomita, magnesita y en el agua
+    de mar como cloruro de magnesio.
+  Link_Type: "Met\xE1lico"
+  Point1: 650
+  Point2: 1090
+  Phase: "S\xF3lido"
+  I_Compound: {fileID: 21300000, guid: 58efbda55f58b9e4fbc10154f8ad608e, type: 3}

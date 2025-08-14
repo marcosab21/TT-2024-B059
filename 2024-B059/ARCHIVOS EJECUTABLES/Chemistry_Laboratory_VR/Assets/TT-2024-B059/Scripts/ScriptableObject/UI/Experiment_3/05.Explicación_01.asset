@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "05.Explicaci\xF3n_01"
+  m_EditorClassIdentifier: 
+  Tittle: "Explicaci\xF3n"
+  Data: "En este experimento, al agregar el bromo al aluminio, se observa una reacci\xF3n
+    exot\xE9rmica, lo que significa que libera una gran cantidad de energ\xEDa en
+    forma de luz y calor. Esto ocurre porque el aluminio se oxida, perdiendo electrones,
+    mientras que el bromo se reduce, ganando esos electrones. El producto formado
+    es el bromuro de aluminio (AlBr<sub>3</sub>)."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 1e5fd38cd2c14364dbb2040d7c23e6da, type: 3}

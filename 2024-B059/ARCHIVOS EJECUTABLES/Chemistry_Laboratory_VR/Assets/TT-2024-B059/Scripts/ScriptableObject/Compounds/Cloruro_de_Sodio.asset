@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf6f64c2d5fbf14b9b0e87b7407a1fc, type: 3}
+  m_Name: Cloruro_de_Sodio
+  m_EditorClassIdentifier: 
+  componentNames:
+  - 011.Sodio_(Na)
+  - 017.Cloro_(Cl)
+  result: {fileID: 8227618053026976643, guid: ee4ed3e8b20f5b247a0b17f9228b2b10, type: 3}
+  Name: Cloruro de Sodio
+  Common_Denomination: Sal
+  Formula: NaCl
+  Use: "Conservante de alimentos, sal de mesa, producci\xF3n de cloro y sodio, deshielo
+    de carreteras, manufactura de qu\xEDmicos, papel y textiles."
+  Natural_Distribution: "Oc\xE9anos, salares, minas de halita."
+  Link_Type: "I\xF3nico"
+  Point1: 801
+  Point2: 1413
+  Type_Point1: "Fusi\xF3n"
+  Type_Point2: "Ebullici\xF3n"
+  Phase: "S\xF3lido"
+  I_Compound: {fileID: 21300000, guid: 975e0c02c2fbb7843993a16078eea617, type: 3}

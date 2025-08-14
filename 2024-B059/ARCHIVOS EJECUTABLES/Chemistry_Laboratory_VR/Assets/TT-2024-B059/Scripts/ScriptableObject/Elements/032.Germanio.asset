@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 032.Germanio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 8796980191061094409, guid: 2b23fa0be22b7b54ab42654182b02023, type: 3}
+  Name: Germanio
+  Symbol: Ge
+  Atomic_Number: 32
+  Atomic_Mass: 72.63
+  Classification: Metaloide
+  Electron_Configuration: '[Ar] 4s2 3d10 4p2'
+  Melting_Point: 938.25
+  Boiling_Point: 2833
+  Phase: "S\xF3lido"
+  Oxidation_States: 0400000002000000
+  Effect: {fileID: 2100000, guid: 70ff49dd4c0c8b14aa812958695921cb, type: 2}
+  I_Element: {fileID: 21300000, guid: 5f1b960c6ef20084a9991e3ee06e0401, type: 3}
+  Description: "Se utiliza en la fabricaci\xF3n de dispositivos semiconductores,
+    como transistores y c\xE9lulas solares. \r\nEs un componente esencial en la tecnolog\xEDa
+    de fibra \xF3ptica y en la producci\xF3n de lentes infrarrojas. \r\nAdem\xE1s,
+    se emplea en aleaciones met\xE1licas para mejorar la resistencia al calor y la
+    conductividad el\xE9ctrica. \r\nEs un semiconductor intr\xEDnseco con propiedades
+    similares al silicio. \r\nTiene un punto de fusi\xF3n de 938.25 \xB0C y se encuentra
+    en la naturaleza principalmente en minerales como la argirodita y la germanita."

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 035.Bromo
+  m_EditorClassIdentifier: 
+  Element: {fileID: 7132011330363134708, guid: b2d12f97deab25f4f94e5be828480e3b, type: 3}
+  Name: Bromo
+  Symbol: Br
+  Atomic_Number: 35
+  Atomic_Mass: 79.904
+  Classification: "Hal\xF3genos"
+  Electron_Configuration: '[Ar] 4s2 3d10 4p5'
+  Melting_Point: -7.2
+  Boiling_Point: 58.8
+  Phase: "L\xEDquido"
+  Oxidation_States: 0500000001000000ffffffff
+  Effect: {fileID: 2100000, guid: e243659c49a0f6a47b3eedeadeb7a6bf, type: 2}
+  I_Element: {fileID: 21300000, guid: dd920a4ffc9bd7e4086a86d3ea398201, type: 3}
+  Description: "Se utiliza en la fabricaci\xF3n de productos qu\xEDmicos, como retardante
+    de llama en pl\xE1sticos y textiles, y en la purificaci\xF3n del agua.  \r\n\rEs
+    un componente crucial en los productos de limpieza y desinfecci\xF3n.  \r\n\rCon
+    un punto de ebullici\xF3n bajo, se utiliza en la extracci\xF3n de minerales y
+    en la s\xEDntesis de medicamentos.  \r\n\rTambi\xE9n se emplea en la s\xEDntesis
+    de compuestos org\xE1nicos y en la producci\xF3n de pel\xEDculas fotogr\xE1ficas. 
+    \r\nEs un l\xEDquido vol\xE1til y corrosivo con un color rojo intenso. "

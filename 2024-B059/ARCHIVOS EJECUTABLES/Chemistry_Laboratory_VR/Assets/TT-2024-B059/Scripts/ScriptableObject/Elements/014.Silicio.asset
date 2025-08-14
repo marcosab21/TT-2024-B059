@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 014.Silicio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 1905004410899400647, guid: dd1c225f23cec5042a2f7a226c6a8030, type: 3}
+  Name: Silicio
+  Symbol: Si
+  Atomic_Number: 14
+  Atomic_Mass: 28.0855
+  Classification: Metaloide
+  Electron_Configuration: '[Ne] 3s2 3p2'
+  Melting_Point: 1414
+  Boiling_Point: 3265
+  Phase: "S\xF3lido"
+  Oxidation_States: 0400000002000000fcffffff
+  Effect: {fileID: 2100000, guid: 70ff49dd4c0c8b14aa812958695921cb, type: 2}
+  I_Element: {fileID: 21300000, guid: d7a74f62b75f4f448a54be317dbda6cd, type: 3}
+  Description: "El silicio es ampliamente utilizado en la industria electr\xF3nica
+    como material semiconductor en la fabricaci\xF3n de chips y paneles solares.
+    \nEs el segundo elemento m\xE1s abundante en la corteza terrestre y se encuentra
+    en forma de arena y cuarzo. \nAdem\xE1s de su papel crucial en la tecnolog\xEDa,
+    el silicio se utiliza en la producci\xF3n de vidrio, cer\xE1mica y cemento. \nSe
+    combina con otros elementos para formar compuestos como el silicio org\xE1nico,
+    utilizado en productos de cuidado personal y suplementos diet\xE9ticos. \nSu
+    alta resistencia y bajo peso lo hacen valioso en la fabricaci\xF3n de aleaciones
+    met\xE1licas y materiales estructurales. \nComo elemento esencial para la vida,
+    el silicio desempe\xF1a un papel importante en la salud \xF3sea y la formaci\xF3n
+    de tejidos conectivos en los organismos."

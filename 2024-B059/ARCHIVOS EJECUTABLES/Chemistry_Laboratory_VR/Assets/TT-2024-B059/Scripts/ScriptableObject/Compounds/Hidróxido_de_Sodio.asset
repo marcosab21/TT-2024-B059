@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf6f64c2d5fbf14b9b0e87b7407a1fc, type: 3}
+  m_Name: "Hidr\xF3xido_de_Sodio"
+  m_EditorClassIdentifier: 
+  componentNames:
+  - "001.Hidr\xF3geno_(H)"
+  - "008.Ox\xEDgeno_(O)"
+  - 011.Sodio_(Na)
+  result: {fileID: 8580834220303091606, guid: dca099bba64bd344481208b70ab66b7d, type: 3}
+  Name: "Hidr\xF3xido de Sodio"
+  Common_Denomination: "Sosa C\xE1ustica"
+  Formula: NaOH
+  Use: "Se utiliza en la fabricaci\xF3n de jab\xF3n, detergentes, productos qu\xEDmicos,
+    en el tratamiento de aguas, desatascadores, y en la producci\xF3n de papel y
+    textiles."
+  Natural_Distribution: "No se encuentra en la naturaleza en estado puro, se obtiene
+    industrialmente a trav\xE9s de la electr\xF3lisis de salmuera (cloruro de sodio)."
+  Link_Type: "I\xF3nico"
+  Point1: 318.14
+  Point2: 1388
+  Type_Point1: "Fusi\xF3n"
+  Type_Point2: "Ebullici\xF3n"
+  Phase: "S\xF3lido"
+  I_Compound: {fileID: 21300000, guid: a70f88bdc09d1da46bf16c08691b1b4a, type: 3}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 029.Cobre
+  m_EditorClassIdentifier: 
+  Element: {fileID: 6136637831748901369, guid: 8f6ca7af627957f42876596140e2ccfc, type: 3}
+  Name: Cobre
+  Symbol: Cu
+  Atomic_Number: 29
+  Atomic_Mass: 63.546
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Ar] 4s2 3d9'
+  Melting_Point: 1084.62
+  Boiling_Point: 2562
+  Phase: "S\xF3lido"
+  Oxidation_States: 0200000001000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: cd509b5601bd28544abcb8d6169c1590, type: 3}
+  Description: "Es un metal ampliamente utilizado en la industria debido a su alta
+    conductividad el\xE9ctrica y t\xE9rmica. \r\nSe emplea en la fabricaci\xF3n de
+    cables el\xE9ctricos, tuber\xEDas de agua y componentes electr\xF3nicos. \r\nAdem\xE1s,
+    es esencial en la producci\xF3n de aleaciones como el bronce y el lat\xF3n. \r\nSu
+    resistencia a la corrosi\xF3n lo hace ideal para aplicaciones marinas y de construcci\xF3n.
+    \r\nA nivel m\xE9dico, se utiliza en implantes y equipos de esterilizaci\xF3n."

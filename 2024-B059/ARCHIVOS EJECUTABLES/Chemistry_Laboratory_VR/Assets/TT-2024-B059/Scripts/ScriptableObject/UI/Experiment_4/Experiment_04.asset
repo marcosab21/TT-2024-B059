@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72d97a846bc61f48998e100bedcec46, type: 3}
+  m_Name: Experiment_04
+  m_EditorClassIdentifier: 
+  Phases:
+  - {fileID: 11400000, guid: 1a66b7266fdbeb744a61d57790f187a4, type: 2}
+  - {fileID: 11400000, guid: 043ffbcff65c51b41bdfcc66ee1e2c8c, type: 2}
+  - {fileID: 11400000, guid: f3ebfb72332b28a4abfd1c91a5958803, type: 2}
+  - {fileID: 11400000, guid: 0ceab438ab9702f4baa7647be5d79334, type: 2}
+  - {fileID: 11400000, guid: 82e31197628b5e54faa3118e83fbb854, type: 2}
+  - {fileID: 11400000, guid: 83eb203d878f8984790eef95db25c177, type: 2}
+  - {fileID: 11400000, guid: c5f1723c7d9767f4398b35008fd40099, type: 2}
+  - {fileID: 11400000, guid: 00f42d3250ee65d4e8058771e7812089, type: 2}
+  - {fileID: 11400000, guid: b1fec18c06c433f4885a7653dc3d57b5, type: 2}
+  - {fileID: 11400000, guid: 25ad85f9e87032e40b811dbdb254b571, type: 2}
+  - {fileID: 11400000, guid: c3d89677661cdca449140e5bdfcddf20, type: 2}
+  - {fileID: 11400000, guid: 62295fc6e0c08a14ab8973c110674e43, type: 2}
+  - {fileID: 11400000, guid: bdefa5e46a9a2a249829a4ce470de2ce, type: 2}
+  - {fileID: 11400000, guid: 9f2e14f8cf3787a488ebc1b10f5af7a1, type: 2}

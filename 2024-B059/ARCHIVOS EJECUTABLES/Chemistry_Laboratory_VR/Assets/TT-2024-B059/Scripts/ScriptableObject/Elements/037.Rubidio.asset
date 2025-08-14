@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 037.Rubidio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 3409474638290907702, guid: fc357d21193af15418be7a8add0812e1, type: 3}
+  Name: Rubidio
+  Symbol: Rb
+  Atomic_Number: 37
+  Atomic_Mass: 85.4678
+  Classification: Alcalino
+  Electron_Configuration: '[Kr] 5s1'
+  Melting_Point: 39.31
+  Boiling_Point: 688
+  Phase: "S\xF3lido"
+  Oxidation_States: 01000000
+  Effect: {fileID: 2100000, guid: a1b76a843da3cc64d8084768f2227209, type: 2}
+  I_Element: {fileID: 21300000, guid: 8a048730b1b488944962445f0af597f6, type: 3}
+  Description: "Tiene diversos usos industriales, como en c\xE9lulas fotoel\xE9ctricas
+    y en la fabricaci\xF3n de l\xE1seres. \r\nEs un metal alcalino altamente reactivo,
+    con caracter\xEDsticas similares al potasio. \r\nAdem\xE1s, se utiliza en la
+    investigaci\xF3n cient\xEDfica, especialmente en la dataci\xF3n por radiocarbono.
+    \r\nSu is\xF3topo radioactivo, el rubidio-87, se emplea en geolog\xEDa para determinar
+    la edad de rocas y minerales. \r\nEl rubidio tambi\xE9n se encuentra en algunas
+    sales de mesa, aunque su uso en este sentido es limitado."

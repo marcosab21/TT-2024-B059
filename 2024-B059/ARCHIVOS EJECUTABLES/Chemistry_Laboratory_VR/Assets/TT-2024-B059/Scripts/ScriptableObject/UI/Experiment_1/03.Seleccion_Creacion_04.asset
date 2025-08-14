@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 03.Seleccion_Creacion_04
+  m_EditorClassIdentifier: 
+  Tittle: "Ahora, \xA1pongamos manos a la obra y creemos nuestros compuestos b\xE1sicos!
+    Vamos paso a paso:"
+  Data: "Para terminar, hagamos di\xF3xido de carbono: Toma carbono y ox\xEDgeno,
+    ll\xE9valos al \xE1rea de creaci\xF3n, y combina estos elementos para formar
+    el di\xF3xido de carbono, un compuesto clave en este experimento."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: d433c4083309d9f45b00f672a376ef7a, type: 3}

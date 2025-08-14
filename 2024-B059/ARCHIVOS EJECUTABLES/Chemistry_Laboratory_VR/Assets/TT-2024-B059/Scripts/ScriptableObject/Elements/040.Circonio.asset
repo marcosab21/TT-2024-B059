@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 040.Circonio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 5764067010800828641, guid: efe7a55750fde4f43b11e6ec9973a2b1, type: 3}
+  Name: Circonio
+  Symbol: Zr
+  Atomic_Number: 40
+  Atomic_Mass: 91.224
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Kr] 5s2 4d2'
+  Melting_Point: 1855
+  Boiling_Point: 4409
+  Phase: "S\xF3lido"
+  Oxidation_States: 04000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: 8b82e715f4e38ae428067fe8612a75cd, type: 3}
+  Description: 

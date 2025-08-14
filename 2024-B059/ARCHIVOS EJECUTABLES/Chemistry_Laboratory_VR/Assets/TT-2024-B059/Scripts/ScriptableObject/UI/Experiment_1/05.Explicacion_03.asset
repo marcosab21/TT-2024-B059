@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 05.Explicacion_03
+  m_EditorClassIdentifier: 
+  Tittle: "Explicaci\xF3n Qu\xEDmica"
+  Data: "\xA1Esos iones de hidr\xF3geno son los responsables! Al bajar el pH, el
+    indicador azul\r de bromotimol cambia de azul a amarillo, mostrando c\xF3mo el
+    di\xF3xido de carbono transforma nuestra soluci\xF3n b\xE1sica en \xE1cida."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 8365dd8603a7b6248a1ca841c4090a9b, type: 3}

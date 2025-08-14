@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 051.Antimonio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 8929233432070700022, guid: 4d6e932dc90c4714882928d87cb513b3, type: 3}
+  Name: Antimonio
+  Symbol: Sb
+  Atomic_Number: 51
+  Atomic_Mass: 121.76
+  Classification: Metaloide
+  Electron_Configuration: '[Kr] 5s2 4d10 5p3'
+  Melting_Point: 630.63
+  Boiling_Point: 1587
+  Phase: "S\xF3lido"
+  Oxidation_States: 0500000003000000fdffffff
+  Effect: {fileID: 2100000, guid: 70ff49dd4c0c8b14aa812958695921cb, type: 2}
+  I_Element: {fileID: 21300000, guid: 3b79691c43a04a945956ae534d101a57, type: 3}
+  Description: 

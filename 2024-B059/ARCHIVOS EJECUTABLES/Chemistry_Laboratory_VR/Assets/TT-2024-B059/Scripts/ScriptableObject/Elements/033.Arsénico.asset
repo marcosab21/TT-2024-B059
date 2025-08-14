@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "033.Ars\xE9nico"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 3854156961153792576, guid: 2c5bd3199d7061b40be815e01328251a, type: 3}
+  Name: "Ars\xE9nico"
+  Symbol: As
+  Atomic_Number: 33
+  Atomic_Mass: 74.92159
+  Classification: Metaloide
+  Electron_Configuration: '[Ar] 4s2 3d10 4p3'
+  Melting_Point: 817
+  Boiling_Point: 614
+  Phase: "S\xF3lido"
+  Oxidation_States: 0500000003000000fdffffff
+  Effect: {fileID: 2100000, guid: 70ff49dd4c0c8b14aa812958695921cb, type: 2}
+  I_Element: {fileID: 21300000, guid: a1e343b34766d0441a309f7af9dbae4a, type: 3}
+  Description: "Tiene m\xFAltiples aplicaciones, desde conservante de madera hasta
+    insecticida y herbicida. \r\nAdem\xE1s, se utiliza en la fabricaci\xF3n de semiconductores.
+    \r\nSin embargo, es altamente t\xF3xico para los humanos y puede causar enfermedades
+    graves e incluso la muerte en dosis elevadas. \r\nEs importante controlar su
+    uso y manejo para evitar da\xF1os ambientales y de salud p\xFAblica."

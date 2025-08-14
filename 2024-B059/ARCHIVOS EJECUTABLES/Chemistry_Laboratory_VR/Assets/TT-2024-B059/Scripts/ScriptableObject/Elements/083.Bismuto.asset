@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 083.Bismuto
+  m_EditorClassIdentifier: 
+  Element: {fileID: 1305298953348728151, guid: 914c02209cf5473489972e0106ad35db, type: 3}
+  Name: Bismuto
+  Symbol: Bi
+  Atomic_Number: 83
+  Atomic_Mass: 208.9804
+  Classification: Metal del bloque p
+  Electron_Configuration: '[Xe] 6s2 4f14 5d10 6p3'
+  Melting_Point: 271.4
+  Boiling_Point: 1564
+  Phase: "S\xF3lido"
+  Oxidation_States: 0500000003000000
+  Effect: {fileID: 2100000, guid: bff8b330b38ffa345a3abab20ece72df, type: 2}
+  I_Element: {fileID: 21300000, guid: 80bfb50a716057e4a88ee51cda8e79fd, type: 3}
+  Description: 

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 104.Rutherfordio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 7295323965492824254, guid: 27e9459135ee09741a5bbf2221707d92, type: 3}
+  Name: Rutherfordio
+  Symbol: Rf
+  Atomic_Number: 104
+  Atomic_Mass: 263
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Rn] 7s2 5f14 6d2'
+  Melting_Point: 2100
+  Boiling_Point: 5500
+  Phase: "S\xF3lido"
+  Oxidation_States: 040000000300000002000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: 67d6665266292574b9ebf405330c6a39, type: 3}
+  Description: 

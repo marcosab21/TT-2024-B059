@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "001.Hidr\xF3geno"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 5063944281170993582, guid: 0cb5a224289982f4e8cf09b9b38527fb, type: 3}
+  Name: "Hidr\xF3geno"
+  Symbol: H
+  Atomic_Number: 1
+  Atomic_Mass: 1.00794
+  Classification: No Metal
+  Electron_Configuration: 1s1
+  Melting_Point: -259.34
+  Boiling_Point: -252.87
+  Phase: Gas
+  Oxidation_States: ffffffff01000000
+  Effect: {fileID: 2100000, guid: 9c12538236c66e146951b001c654794d, type: 2}
+  I_Element: {fileID: 21300000, guid: 7f6ce2265a011794dba0be5a921a0059, type: 3}
+  Description: "El hidr\xF3geno, compuesto por un prot\xF3n y un electr\xF3n, es
+    el elemento m\xE1s simple y abundante en el universo, constituyendo aproximadamente
+    el 90% de la materia visible. \nEs utilizado como combustible en la fusi\xF3n
+    nuclear en estrellas y se estudia como una posible fuente de energ\xEDa en la
+    Tierra. \nComercialmente, se emplea en la producci\xF3n de amon\xEDaco mediante
+    el proceso de Haber, en la hidrogenaci\xF3n de grasas y aceites, y en la fabricaci\xF3n
+    de cohetes cuando se combina con ox\xEDgeno l\xEDquido. \nForma compuestos con
+    otros elementos, como agua, amon\xEDaco, metano, az\xFAcar, per\xF3xido de hidr\xF3geno
+    y \xE1cido clorh\xEDdrico. \nAdem\xE1s, tiene tres is\xF3topos comunes: protio
+    (hidr\xF3geno ordinario), deuterio y tritio."

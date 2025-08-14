@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 022.Titanio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 7756491202128745723, guid: 3d049084182cc9a43b197641ed6baf50, type: 3}
+  Name: Titanio
+  Symbol: Ti
+  Atomic_Number: 22
+  Atomic_Mass: 47.867
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Ar] 4s2 3d2'
+  Melting_Point: 1668
+  Boiling_Point: 3287
+  Phase: "S\xF3lido"
+  Oxidation_States: 040000000300000002000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: bb084fac7efafa94c9ff57f3c335419d, type: 3}
+  Description: "El titanio es un metal ampliamente utilizado debido a su alta resistencia,
+    ligereza y resistencia a la corrosi\xF3n. \r\nSe emplea en aplicaciones aeroespaciales,
+    m\xE9dicas y de fabricaci\xF3n de equipos deportivos. \r\nEs esencial en la industria
+    aeroespacial para la construcci\xF3n de aviones y sat\xE9lites, as\xED como en
+    implantes m\xE9dicos y equipos quir\xFArgicos. \r\nAdem\xE1s, se utiliza en la
+    fabricaci\xF3n de productos de consumo, como marcos de gafas y joyas de alta
+    gama. \r\nSu resistencia y versatilidad lo convierten en un material valioso
+    en diversas industrias."

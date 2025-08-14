@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf6f64c2d5fbf14b9b0e87b7407a1fc, type: 3}
+  m_Name: "\xC1cido_Clorh\xEDdrico"
+  m_EditorClassIdentifier: 
+  componentNames:
+  - "001.Hidr\xF3geno_(H)"
+  - 017.Cloro_(Cl)
+  result: {fileID: 3036356954865662741, guid: 31b6d85f151f3c8439dae08d39da5a36, type: 3}
+  Name: "\xC1cido clorh\xEDdrico"
+  Common_Denomination: "\xC1cido muri\xE1tico"
+  Formula: HCl
+  Use: "Se utiliza principalmente para limpiar metales, en la industria qu\xEDmica,
+    en la producci\xF3n de cloruros y como reactivo en laboratorios."
+  Natural_Distribution: "El \xE1cido clorh\xEDdrico se encuentra de forma natural
+    en el est\xF3mago humano como parte del jugo g\xE1strico."
+  Link_Type: Covalente Polar
+  Point1: -114
+  Point2: 110
+  Type_Point1: "Fusi\xF3n"
+  Type_Point2: "Ebullici\xF3n"
+  Phase: "L\xEDquido"
+  I_Compound: {fileID: 21300000, guid: efd81324bed5849488ca1806392413f9, type: 3}

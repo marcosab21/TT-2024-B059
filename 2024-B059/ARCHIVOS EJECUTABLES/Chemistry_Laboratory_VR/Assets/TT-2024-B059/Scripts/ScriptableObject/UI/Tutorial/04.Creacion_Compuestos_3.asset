@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 04.Creacion_Compuestos_3
+  m_EditorClassIdentifier: 
+  Tittle: "Creaci\xF3n de Compuestos"
+  Data: "Ahora, formemos cloruro de sodio. Seleccionando un \xE1tomo de sodio y uno
+    de cloro, agr\xE9galos a la zona de mezcla y presiona 'Crear'. El cloruro de
+    sodio se formar\xE1 y su informaci\xF3n aparecer\xE1 en la pantalla."
+  videoClip: {fileID: 32900000, guid: 1e9c2f7a9372e6940b2f88644f2c9a81, type: 3}
+  audioClip: {fileID: 8300000, guid: 2f93b19290860fb47a876c3c1f1b61a3, type: 3}

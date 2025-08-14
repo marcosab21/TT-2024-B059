@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "036.Kript\xF3n"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 8483739135442340849, guid: e0056ac10456cce4e9e29de832336cd0, type: 3}
+  Name: "Kript\xF3n"
+  Symbol: Kr
+  Atomic_Number: 36
+  Atomic_Mass: 83.798
+  Classification: Gases Nobles
+  Electron_Configuration: '[Ar] 4s2 3d10 4p6'
+  Melting_Point: -157.36
+  Boiling_Point: -153.22
+  Phase: Gas
+  Oxidation_States: 00000000
+  Effect: {fileID: 2100000, guid: ea83c4266d0d35a428c045e5f53c4816, type: 2}
+  I_Element: {fileID: 21300000, guid: 471445e1d12e770429d6ada0004ef936, type: 3}
+  Description: "Tiene diversos usos, como en l\xE1mparas de ne\xF3n para producir
+    luz de color, en medicina nuclear para detectar enfermedades y en l\xE1seres
+    para investigaciones cient\xEDficas.  \r\nEs un gas noble presente en la atm\xF3sfera
+    terrestre en peque\xF1as cantidades y se utiliza en l\xE1mparas de alta intensidad
+    y en dispositivos de iluminaci\xF3n de emergencia.  \r\nAdem\xE1s, se emplea
+    en la industria aeroespacial para llenar espacios vac\xEDos en ventanas de doble
+    acristalamiento y en la fabricaci\xF3n de l\xE1seres de gas. "

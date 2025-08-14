@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 02.Balanceo_1
+  m_EditorClassIdentifier: 
+  Tittle: "Balanceo de Ecuaciones Qu\xEDmicas"
+  Data: "Antes de manipular elementos, haremos un ejercicio para balancear ecuaciones
+    qu\xEDmicas. Esto es crucial para representar reacciones correctamente, ajustando
+    los \xE1tomos en reactivos y productos mediante el m\xE9todo de tanteo."
+  videoClip: {fileID: 32900000, guid: fc7114aee5b016242a9156d5577e15ad, type: 3}
+  audioClip: {fileID: 8300000, guid: 00389cb996bc3bb4d9465c30ebd4ebe1, type: 3}

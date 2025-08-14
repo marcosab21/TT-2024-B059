@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 097.Berkelio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 81779661996109133, guid: a8d7be617cfdcb74e92db782b763e785, type: 3}
+  Name: Berkelio
+  Symbol: Bk
+  Atomic_Number: 97
+  Atomic_Mass: 247
+  Classification: "Act\xEDnido"
+  Electron_Configuration: '[Rn] 7s2 5f9'
+  Melting_Point: 1050
+  Boiling_Point: 0
+  Phase: "S\xF3lido"
+  Oxidation_States: 0400000003000000
+  Effect: {fileID: 2100000, guid: bbf2f86295e7f06449b52ac4378913d1, type: 2}
+  I_Element: {fileID: 21300000, guid: 22c2c3023c9ea4e489f1a87a3534d300, type: 3}
+  Description: 

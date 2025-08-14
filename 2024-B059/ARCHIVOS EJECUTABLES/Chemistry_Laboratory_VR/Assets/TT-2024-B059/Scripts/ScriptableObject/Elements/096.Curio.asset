@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 096.Curio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 7626533230789312220, guid: 76fd2f43c14b6604b9e35a930c53b29d, type: 3}
+  Name: Curio
+  Symbol: Cm
+  Atomic_Number: 96
+  Atomic_Mass: 247
+  Classification: "Act\xEDnido"
+  Electron_Configuration: '[Rn] 7s2 5f7 6d1'
+  Melting_Point: 1345
+  Boiling_Point: -3100
+  Phase: "S\xF3lido"
+  Oxidation_States: 03000000
+  Effect: {fileID: 2100000, guid: bbf2f86295e7f06449b52ac4378913d1, type: 2}
+  I_Element: {fileID: 21300000, guid: 8ecd333e0de298b4493d7a072fd083f6, type: 3}
+  Description: 

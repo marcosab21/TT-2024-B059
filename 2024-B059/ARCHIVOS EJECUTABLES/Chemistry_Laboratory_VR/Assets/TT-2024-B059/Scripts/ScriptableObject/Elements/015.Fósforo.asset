@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "015.F\xF3sforo"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 3831127393971418881, guid: cac7d660db7f55f4ba767e953be6ef66, type: 3}
+  Name: "F\xF3sforo"
+  Symbol: P
+  Atomic_Number: 15
+  Atomic_Mass: 30.973763
+  Classification: No Metal
+  Electron_Configuration: '[Ne] 3s2 3p3'
+  Melting_Point: 44.15
+  Boiling_Point: 280.5
+  Phase: "S\xF3lido"
+  Oxidation_States: 0500000003000000fdffffff
+  Effect: {fileID: 2100000, guid: 9c12538236c66e146951b001c654794d, type: 2}
+  I_Element: {fileID: 21300000, guid: 93649dbcfd7338a4e9f18081eebccf5b, type: 3}
+  Description: "El f\xF3sforo se utiliza en la producci\xF3n de fertilizantes, pesticidas
+    y detergentes, adem\xE1s de ser esencial para la vida en forma de fosfatos en
+    el ADN y ARN. \nTiene diversas formas alotr\xF3picas, siendo el f\xF3sforo blanco
+    altamente reactivo y usado en la industria qu\xEDmica. \nEl f\xF3sforo rojo se
+    emplea en la fabricaci\xF3n de cerillas. \nEl f\xF3sforo negro se usa en pigmentos,
+    fuegos artificiales y materiales fotovoltaicos. \nEs un componente clave de los
+    huesos y dientes. \nEn alta concentraci\xF3n, puede ser t\xF3xico para el medio
+    ambiente."

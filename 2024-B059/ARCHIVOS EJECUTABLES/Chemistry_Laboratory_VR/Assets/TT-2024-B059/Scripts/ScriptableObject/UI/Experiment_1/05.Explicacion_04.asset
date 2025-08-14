@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 05.Explicacion_04
+  m_EditorClassIdentifier: 
+  Tittle: "Explicaci\xF3n Qu\xEDmica"
+  Data: "En resumen, el hidr\xF3xido de sodio sube el pH y crea una soluci\xF3n b\xE1sica,
+    pero \xA1e\rl di\xF3xido de carbono lo baja y la convierte en \xE1cida! \xA1As\xED
+    es como los gases pueden cambiar las propiedades qu\xEDmicas de una soluci\xF3n!"
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 76bc0b30362e5344cb05775f0c759fa5, type: 3}

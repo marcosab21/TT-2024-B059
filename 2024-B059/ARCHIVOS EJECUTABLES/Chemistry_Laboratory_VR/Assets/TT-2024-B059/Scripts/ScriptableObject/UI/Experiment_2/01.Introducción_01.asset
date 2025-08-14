@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "01.Introducci\xF3n_01"
+  m_EditorClassIdentifier: 
+  Tittle: "\xA1Bienvenido al laboratorio virtual!"
+  Data: "Hoy realizar\xE1s un experimento emocionante: sintetizar cloruro de amonio,
+    un compuesto que se forma al mezclar dos soluciones.\n\n*Hidr\xF3xido de amonio,
+    que es una base.\n*\xC1cido clorh\xEDdrico, que es un \xE1cido fuerte."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 0de07a4355d288047a4863a0b6500214, type: 3}

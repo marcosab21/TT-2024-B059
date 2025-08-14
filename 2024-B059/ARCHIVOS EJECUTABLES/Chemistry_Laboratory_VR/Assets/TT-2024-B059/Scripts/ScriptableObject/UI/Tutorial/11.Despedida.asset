@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 11.Despedida
+  m_EditorClassIdentifier: 
+  Tittle: Despedida
+  Data: "\xA1Felicidades! Has completado el tutorial de laboratorio virtual, aprendiendo
+    a seleccionar elementos, crear compuestos y calentar l\xEDquidos. Esto es solo
+    el inicio de tu aventura en qu\xEDmica. \xA1Hasta la pr\xF3xima!"
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 228f0e9dd51cb2d4ab216b7df23d0363, type: 3}

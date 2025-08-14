@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "03.Selecci\xF3n_Creaci\xF3n_01"
+  m_EditorClassIdentifier: 
+  Tittle: 
+  Data: "Selecciona el bromo en la tabla peri\xF3dica virtual y ll\xE9valo a la zona
+    de creaci\xF3n. All\xED, se transformar\xE1 en un gotero con bromo l\xEDquido,
+    listo para usarse en el experimento. Una vez que tengas el gotero, col\xF3calo
+    en el \xE1rea de trabajo experimental."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 6a5b9d3da414690448eb4620f0e21557, type: 3}

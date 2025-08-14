@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 079.Oro
+  m_EditorClassIdentifier: 
+  Element: {fileID: 8518302493764274104, guid: ef76006fa0de6df47b980c91d8572d18, type: 3}
+  Name: Oro
+  Symbol: Au
+  Atomic_Number: 79
+  Atomic_Mass: 196.96657
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Xe] 6s2 4f14 5d9'
+  Melting_Point: 1064.18
+  Boiling_Point: 2856
+  Phase: "S\xF3lido"
+  Oxidation_States: 0300000001000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: 2fd5cf36686877f46b67bd16374832b3, type: 3}
+  Description: 

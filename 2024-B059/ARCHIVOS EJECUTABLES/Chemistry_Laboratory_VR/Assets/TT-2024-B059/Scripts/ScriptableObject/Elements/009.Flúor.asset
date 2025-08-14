@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "009.Fl\xFAor"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 3842722036849053389, guid: 92025f144d636fe45aa684a8393745c1, type: 3}
+  Name: "Fl\xFAor"
+  Symbol: F
+  Atomic_Number: 9
+  Atomic_Mass: 18.998404
+  Classification: "Hal\xF3genos"
+  Electron_Configuration: '[He] 2s2 2p5'
+  Melting_Point: -219.62
+  Boiling_Point: -188.12
+  Phase: Gas
+  Oxidation_States: ffffffff
+  Effect: {fileID: 2100000, guid: e243659c49a0f6a47b3eedeadeb7a6bf, type: 2}
+  I_Element: {fileID: 21300000, guid: 2e8dcde9f7953914183f4682bcc529c5, type: 3}
+  Description: "El fl\xFAor se utiliza en la producci\xF3n de compuestos fluorados,
+    como el fluoruro de sodio, esencial en la fluoraci\xF3n del agua para prevenir
+    la caries dental. \r\nTambi\xE9n se emplea en la fabricaci\xF3n de materiales
+    resistentes a la corrosi\xF3n, como el tefl\xF3n. \r\nEn la industria qu\xEDmica,
+    el fl\xFAor act\xFAa como agente oxidante y deshidratante. \r\nAdem\xE1s, se
+    utiliza en la s\xEDntesis de productos farmac\xE9uticos y en la obtenci\xF3n
+    de aluminio. \r\nA nivel de investigaci\xF3n, el fl\xFAor es fundamental en la
+    producci\xF3n de trazadores para im\xE1genes m\xE9dicas. \r\nEs un elemento altamente
+    reactivo y t\xF3xico en su forma elemental."

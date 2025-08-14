@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "05.Eliminaci\xF3n"
+  m_EditorClassIdentifier: 
+  Tittle: "Eliminaci\xF3n de Elemento Incorrecto"
+  Data: "Si seleccionas un elemento incorrecto, puedes eliminarlo. Elige cualquier
+    \xE1tomo, cierra tu mano sobre \xE9l y ll\xE9valo a la zona de desecho a la izquierda.
+    As\xED podr\xE1s corregir errores f\xE1cilmente."
+  videoClip: {fileID: 32900000, guid: 17fb0437e81f2474fafff95bb850dd60, type: 3}
+  audioClip: {fileID: 8300000, guid: 44822f8422649dd4492b6601daad3cae, type: 3}

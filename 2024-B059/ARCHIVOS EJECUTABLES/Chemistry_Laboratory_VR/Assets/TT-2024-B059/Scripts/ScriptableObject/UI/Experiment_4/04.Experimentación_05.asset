@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "04.Experimentaci\xF3n_05"
+  m_EditorClassIdentifier: 
+  Tittle: Destapar y observar los residuos
+  Data: "Finalmente, destapa el bloque y observa los residuos que han quedado despu\xE9s
+    de la reacci\xF3n. Ver\xE1s los productos resultantes de la reacci\xF3n entre
+    el magnesio y el di\xF3xido de carbono, los cuales incluyen \xF3xido de magnesio
+    y carbono."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: b1793ffa6c0bdd74c84cf80f3999160b, type: 3}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "04.Experimentaci\xF3n_03"
+  m_EditorClassIdentifier: 
+  Tittle: "\xA1Ahora viene la magia qu\xEDmica! "
+  Data: "Vamos a acidificar la soluci\xF3n: Toma el hielo seco (nuestro di\xF3xido
+    de carbono s\xF3lido) y agr\xE9galo a la soluci\xF3n en el matraz. Observa c\xF3mo,
+    al reaccionar, la soluci\xF3n cambia de azul a verde y finalmente a amarillo,
+    indic\xE1ndonos que se ha vuelto \xE1cida. \xBFIncre\xEDble, verdad?"
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: fa819260943a608488ec9f63550f8bb1, type: 3}

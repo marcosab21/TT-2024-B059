@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 072.Hafnio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 3674367965005710938, guid: 2d77037e50157984c97d967453167c79, type: 3}
+  Name: Hafnio
+  Symbol: Hf
+  Atomic_Number: 72
+  Atomic_Mass: 178.49
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Xe] 6s2 4f14 5d2'
+  Melting_Point: 2233
+  Boiling_Point: 4603
+  Phase: "S\xF3lido"
+  Oxidation_States: 04000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: d339e4fedc5b9f443856fa9e79489928, type: 3}
+  Description: 

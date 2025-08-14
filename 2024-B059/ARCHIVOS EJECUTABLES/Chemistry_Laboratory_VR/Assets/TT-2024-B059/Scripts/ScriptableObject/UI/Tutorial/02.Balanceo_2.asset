@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 02.Balanceo_2
+  m_EditorClassIdentifier: 
+  Tittle: "Balanceo de Ecuaciones Qu\xEDmicas"
+  Data: "Ver\xE1s una ecuaci\xF3n incompleta. Selecciona los campos vac\xEDos y coloca
+    los coeficientes usando el teclado num\xE9rico. Haz clic en 'Validar' al terminar.
+    Si est\xE1 correcta, avanzas; de lo contrario, intenta de nuevo para igualar
+    los \xE1tomos en ambos lados."
+  videoClip: {fileID: 32900000, guid: fc7114aee5b016242a9156d5577e15ad, type: 3}
+  audioClip: {fileID: 8300000, guid: 93a1e6dc63bac7341a195e48fe9e98e5, type: 3}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 111.Roentgenio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 8529261784313442688, guid: 2077a846ffbf2994398d24ebdbae7edc, type: 3}
+  Name: Roentgenio
+  Symbol: Rg
+  Atomic_Number: 111
+  Atomic_Mass: 281
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Rn] 7s2 5f14 6d9'
+  Melting_Point: 0
+  Boiling_Point: 0
+  Phase: "S\xF3lido (Esperado)"
+  Oxidation_States: 050000000300000001000000ffffffff
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: 95cb7189a4ebfa14fb1d2c4a0af522fe, type: 3}
+  Description: 

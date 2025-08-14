@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 06.Indicador
+  m_EditorClassIdentifier: 
+  Tittle: "Agregar Indicador a L\xEDquido"
+  Data: "Ahora trabajaremos con l\xEDquidos. Usa el cuentagotas y agrega azul de
+    metileno al matraz, gota a gota, hasta que el l\xEDquido cambie completamente
+    de color. Observa la transformaci\xF3n."
+  videoClip: {fileID: 32900000, guid: ad5803cc415065d4782aa076229e13bf, type: 3}
+  audioClip: {fileID: 8300000, guid: add386914e673e4429c0ae5f7d9e2fd0, type: 3}

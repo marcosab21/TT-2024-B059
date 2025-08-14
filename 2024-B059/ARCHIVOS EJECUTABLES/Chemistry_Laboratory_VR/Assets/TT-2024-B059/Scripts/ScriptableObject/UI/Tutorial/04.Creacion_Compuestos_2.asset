@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 04.Creacion_Compuestos_2
+  m_EditorClassIdentifier: 
+  Tittle: "Creaci\xF3n de Compuestos"
+  Data: "Coloca la porci\xF3n de agua al frente de la mesa. Repite el proceso para
+    crear otr\r\na porci\xF3n: seleccionando un \xE1tomo de hidr\xF3geno y otro de
+    ox\xEDgeno, agr\xE9galos y presiona 'Crear'."
+  videoClip: {fileID: 32900000, guid: 0d48ce525ea63a7479402369755165c2, type: 3}
+  audioClip: {fileID: 8300000, guid: aa51f6ba43f9cda41813299a7a15ce28, type: 3}

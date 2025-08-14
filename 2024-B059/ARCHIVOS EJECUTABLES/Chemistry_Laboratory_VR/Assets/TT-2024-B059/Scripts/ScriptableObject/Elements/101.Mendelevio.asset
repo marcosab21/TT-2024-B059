@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 101.Mendelevio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 7707595464934467933, guid: 0308a9bf9d0d6b14797e79c8f788a2ad, type: 3}
+  Name: Mendelevio
+  Symbol: Md
+  Atomic_Number: 101
+  Atomic_Mass: 258
+  Classification: "Act\xEDnido"
+  Electron_Configuration: '[Rn] 7s2 5f13'
+  Melting_Point: 827
+  Boiling_Point: 0
+  Phase: "S\xF3lido"
+  Oxidation_States: 0300000002000000
+  Effect: {fileID: 2100000, guid: bbf2f86295e7f06449b52ac4378913d1, type: 2}
+  I_Element: {fileID: 21300000, guid: d7efe7afbd2251f41b8d63ce37652342, type: 3}
+  Description: 

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 058.Cerio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 6466801354951422245, guid: 910f95b0d57616849b7336aa3f8501d3, type: 3}
+  Name: Cerio
+  Symbol: Ce
+  Atomic_Number: 58
+  Atomic_Mass: 140.116
+  Classification: "Lant\xE1nidos"
+  Electron_Configuration: '[Xe] 6s2 4f1 5d1'
+  Melting_Point: 798
+  Boiling_Point: 3424
+  Phase: "S\xF3lido"
+  Oxidation_States: 0400000003000000
+  Effect: {fileID: 2100000, guid: 6fec5b630d0648644bfe0268ca99b450, type: 2}
+  I_Element: {fileID: 21300000, guid: 90540f3eddf27ce4b9ad8e91d65cf87e, type: 3}
+  Description: 

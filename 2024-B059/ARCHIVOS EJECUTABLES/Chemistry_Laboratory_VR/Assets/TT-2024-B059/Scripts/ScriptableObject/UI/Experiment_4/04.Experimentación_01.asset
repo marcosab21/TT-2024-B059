@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "04.Experimentaci\xF3n_01"
+  m_EditorClassIdentifier: 
+  Tittle: Colocar el Magnesio en uno de los bloques de Hiello Seco
+  Data: "Toma el Magnesio y col\xF3calo en uno de los bloques de Di\xF3xido de Carbono
+    que preparaste previamente. Aseg\xFArate de que el magnesio est\xE9 bien colocado
+    para que se inicie la reacci\xF3n."
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 7d93900f77970ba4f9af0303d85eb7d9, type: 3}

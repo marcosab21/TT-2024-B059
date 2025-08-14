@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 106.Seaborgio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 7228733512190665413, guid: e8fb3f7c606434142878ddb6a8b5415e, type: 3}
+  Name: Seaborgio
+  Symbol: Sg
+  Atomic_Number: 106
+  Atomic_Mass: 271
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Rn] 7s2 5f14 6d4'
+  Melting_Point: 0
+  Boiling_Point: 0
+  Phase: "S\xF3lido"
+  Oxidation_States: 06000000050000000400000003000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: c1cf1bffb18d5064480b28c9221b43ed, type: 3}
+  Description: 

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 025.Manganeso
+  m_EditorClassIdentifier: 
+  Element: {fileID: 8925097028425576542, guid: 581a4b1efb147b94eac27a203eb63ded, type: 3}
+  Name: Manganeso
+  Symbol: Mn
+  Atomic_Number: 25
+  Atomic_Mass: 54.938046
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Ar] 4s2 3d5'
+  Melting_Point: 1246
+  Boiling_Point: 2061
+  Phase: "S\xF3lido"
+  Oxidation_States: 07000000040000000300000002000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: 7e3d20b9acbb00749acecc5f3ee0743f, type: 3}
+  Description: "Tiene una amplia gama de aplicaciones industriales, incluyendo la
+    producci\xF3n de acero y ferroaleaciones. \r\nEs esencial para la fabricaci\xF3n
+    de pilas secas y se utiliza en la producci\xF3n de fertilizantes agr\xEDcolas.
+    \r\nAdem\xE1s, se emplea en la industria del vidrio y cer\xE1mica, as\xED como
+    en la fabricaci\xF3n de bater\xEDas recargables de iones de litio. \r\nEs un
+    oligoelemento vital para la salud humana y animal, necesario para el metabolismo
+    y el desarrollo \xF3seo."

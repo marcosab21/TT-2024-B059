@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ec62d07f426dd469f5c205bf886699, type: 3}
+  m_Name: 00.Compounds_Tutorial
+  m_EditorClassIdentifier: 
+  Compounds:
+  - {fileID: 11400000, guid: c92529c1aad80954e8419852a5ff1285, type: 2}
+  - {fileID: 11400000, guid: 80b3497575e7f0d4fa93788559357e14, type: 2}

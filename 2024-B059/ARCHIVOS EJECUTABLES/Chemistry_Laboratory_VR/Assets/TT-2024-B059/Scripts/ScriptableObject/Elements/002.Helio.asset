@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 002.Helio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 4987724035750031840, guid: 6680793a228c00d4c817b92236133dcf, type: 3}
+  Name: Helio
+  Symbol: He
+  Atomic_Number: 2
+  Atomic_Mass: 4.002602
+  Classification: Gases Nobles
+  Electron_Configuration: 1s2
+  Melting_Point: -272.2
+  Boiling_Point: -268.93
+  Phase: Gas
+  Oxidation_States: 00000000
+  Effect: {fileID: 2100000, guid: ea83c4266d0d35a428c045e5f53c4816, type: 2}
+  I_Element: {fileID: 21300000, guid: b3bec75d5fb1e194b8c79afcef1488ab, type: 3}
+  Description: "El helio, el segundo elemento m\xE1s abundante en el universo, constituye
+    aproximadamente el 0.0005% de la atm\xF3sfera terrestre. \nEsta cantidad escasa
+    no est\xE1 gravitacionalmente unida a la Tierra y se pierde constantemente en
+    el espacio, siendo reemplazada por la descomposici\xF3n de elementos radiactivos
+    en la corteza terrestre. \nComercialmente, se recupera principalmente de dep\xF3sitos
+    de gas natural y se utiliza en una variedad de aplicaciones, como inflar dirigibles
+    y globos, como escudo inerte para soldadura, para presurizar tanques de combustible
+    de cohetes, en mezclas de gases para buceo profundo, como criog\xE9nico en estudios
+    de superconductividad, y para crear imanes superconductores. \nAunque es un gas
+    inerte y no se combina f\xE1cilmente con otros elementos, se est\xE1n realizando
+    intentos para producir compuestos, como el difluoruro de helio (HeF2)."

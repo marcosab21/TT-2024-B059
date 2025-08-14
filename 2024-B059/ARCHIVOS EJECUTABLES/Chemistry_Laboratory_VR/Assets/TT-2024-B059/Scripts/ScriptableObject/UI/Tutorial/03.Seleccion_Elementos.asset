@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 03.Seleccion_Elementos
+  m_EditorClassIdentifier: 
+  Tittle: "Selecci\xF3n de Elementos"
+  Data: "Vamos a seleccionar elementos en la tabla peri\xF3dica. Toca la tabla virtual
+    y elige un \xE1tomo de hidr\xF3geno. Ver\xE1s detalles del elemento en pantalla.
+    Repite el proceso con un \xE1tomo de ox\xEDgeno para aprender m\xE1s."
+  videoClip: {fileID: 32900000, guid: 7e3f76d4a323dce40b5ed64b34956a4f, type: 3}
+  audioClip: {fileID: 8300000, guid: 00a38ec79e712af4baad0c18014a634f, type: 3}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 098.Californio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 6361790185950163942, guid: defed3ac0d0842e43bc5643e790fda82, type: 3}
+  Name: Californio
+  Symbol: Cf
+  Atomic_Number: 98
+  Atomic_Mass: 251
+  Classification: "Act\xEDnido"
+  Electron_Configuration: '[Rn] 7s2 5f10'
+  Melting_Point: 900
+  Boiling_Point: 0
+  Phase: "S\xF3lido"
+  Oxidation_States: 03000000
+  Effect: {fileID: 2100000, guid: bbf2f86295e7f06449b52ac4378913d1, type: 2}
+  I_Element: {fileID: 21300000, guid: 0ce664e4fff7a814bb9a273e214a142e, type: 3}
+  Description: 

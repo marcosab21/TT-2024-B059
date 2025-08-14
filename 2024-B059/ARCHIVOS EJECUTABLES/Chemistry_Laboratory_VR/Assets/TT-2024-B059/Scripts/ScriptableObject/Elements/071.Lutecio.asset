@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 071.Lutecio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 4741743297581097319, guid: 956ccf6309fa4f940803cabb677a0c0c, type: 3}
+  Name: Lutecio
+  Symbol: Lu
+  Atomic_Number: 71
+  Atomic_Mass: 174.9668
+  Classification: "Lant\xE1nidos"
+  Electron_Configuration: '[Xe] 6s2 4f14 5d1'
+  Melting_Point: 1663
+  Boiling_Point: 3402
+  Phase: "S\xF3lido"
+  Oxidation_States: 03000000
+  Effect: {fileID: 2100000, guid: 6fec5b630d0648644bfe0268ca99b450, type: 2}
+  I_Element: {fileID: 21300000, guid: b77155f71d49efa458c4f93ba45b7c20, type: 3}
+  Description: 

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 06.Despedida
+  m_EditorClassIdentifier: 
+  Tittle: "\xA1Felicidades! "
+  Data: "Has completado el experimento con \xE9xito. Ahora sabes c\xF3mo el magnesio
+    reacciona con el di\xF3xido de carbono para producir \xF3xido de magnesio y carbono.\n\nGracias
+    por participar en este experimento virtual. \xA1Nos vemos en el pr\xF3ximo desaf\xEDo
+    qu\xEDmico!"
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 6410e31159a68e94bbeb4e67b052fad5, type: 3}

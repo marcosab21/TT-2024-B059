@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 041.Niobio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 2840647315288975706, guid: 16dbaece3e29339428dba431eba7b6e6, type: 3}
+  Name: Niobio
+  Symbol: Nb
+  Atomic_Number: 41
+  Atomic_Mass: 92.90637
+  Classification: "Metal de transici\xF3n"
+  Electron_Configuration: '[Kr] 5s2 4d3'
+  Melting_Point: 2477
+  Boiling_Point: 4744
+  Phase: "S\xF3lido"
+  Oxidation_States: 0500000003000000
+  Effect: {fileID: 2100000, guid: e21f9c89fd39a864f9d644b2ef558b71, type: 2}
+  I_Element: {fileID: 21300000, guid: c45496a8a0e535446b3b479ef32d23d6, type: 3}
+  Description: 

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 04.Creacion_Compuestos_1
+  m_EditorClassIdentifier: 
+  Tittle: "Creaci\xF3n de Compuestos"
+  Data: "Con los elementos listos, crearemos agua. Cierra tu mano alrededor del n\xFAcleo
+    de hidr\xF3geno y ox\xEDgeno y ll\xE9valos a la zona designada. Presiona 'Crear'
+    y aparecer\xE1 el agua con su f\xF3rmula y nombre en pantalla."
+  videoClip: {fileID: 32900000, guid: 13ad966e7ea173b4e889c6f56e080b0d, type: 3}
+  audioClip: {fileID: 8300000, guid: fce40e0acd89ffa4c83766184cb49e8a, type: 3}

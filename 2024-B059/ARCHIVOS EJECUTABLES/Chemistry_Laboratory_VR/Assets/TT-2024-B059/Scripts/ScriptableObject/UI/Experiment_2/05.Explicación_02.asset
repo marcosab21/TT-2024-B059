@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: "05.Explicaci\xF3n_02"
+  m_EditorClassIdentifier: 
+  Tittle: "\xA1Gran trabajo, qu\xEDmico en potencia! Vamos a analizar lo que ocurri\xF3"
+  Data: "Nube blanca: La reacci\xF3n liber\xF3 cloruro de amonio en part\xEDculas
+    que formaron esa nube.\nFormaci\xF3n de cristales: Al calentar, aumentaste la
+    concentraci\xF3n de la soluci\xF3n, y al enfriarla, el cloruro de amonio cristaliz\xF3.\n"
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 624ca04e07778d848a19ee79fd7655bc, type: 3}

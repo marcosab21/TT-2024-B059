@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf6f64c2d5fbf14b9b0e87b7407a1fc, type: 3}
+  m_Name: "Di\xF3xido_de_Carbono"
+  m_EditorClassIdentifier: 
+  componentNames:
+  - 006.Carbono_(C)
+  - "008.Ox\xEDgeno_(O)"
+  result: {fileID: 5351889602781839945, guid: 20c9d82568af0aa4faa814a4c9eec7d5, type: 3}
+  Name: "Di\xF3xido de Carbono"
+  Common_Denomination: Hielo Seco
+  Formula: CO<sub>2</sub>
+  Use: "Se usa en bebidas carbonatadas, extintores de incendios, refrigeraci\xF3n,
+    y en la industria qu\xEDmica para la producci\xF3n de urea y otros compuestos."
+  Natural_Distribution: "Se encuentra naturalmente en la atm\xF3sfera, producido
+    por la respiraci\xF3n de los seres vivos, la descomposici\xF3n de materia org\xE1nica,
+    y la actividad volc\xE1nica."
+  Link_Type: Covalente polar
+  Point1: -274.15
+  Point2: -78.5
+  Type_Point1: "Fusi\xF3n"
+  Type_Point2: "Sublimaci\xF3n"
+  Phase: "S\xF3lido"
+  I_Compound: {fileID: 21300000, guid: b4290ed0ff3512f4cafd524478ad4b11, type: 3}

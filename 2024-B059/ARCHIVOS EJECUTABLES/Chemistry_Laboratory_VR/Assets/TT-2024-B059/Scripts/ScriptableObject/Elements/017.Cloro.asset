@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 017.Cloro
+  m_EditorClassIdentifier: 
+  Element: {fileID: 7713749615569879904, guid: 61ee4a3561ae8d34daa7b69befce36b5, type: 3}
+  Name: Cloro
+  Symbol: Cl
+  Atomic_Number: 17
+  Atomic_Mass: 35.4527
+  Classification: "Hal\xF3genos"
+  Electron_Configuration: '[Ne] 3s2 3p5'
+  Melting_Point: -101.5
+  Boiling_Point: -34.04
+  Phase: Gas
+  Oxidation_States: 070000000500000001000000ffffffff
+  Effect: {fileID: 2100000, guid: e243659c49a0f6a47b3eedeadeb7a6bf, type: 2}
+  I_Element: {fileID: 21300000, guid: 83a7b69eb3908b3478bbc31336f7290f, type: 3}
+  Description: "El cloro se utiliza ampliamente como desinfectante en el tratamiento
+    de agua potable y piscinas. \r\nTambi\xE9n es fundamental en la producci\xF3n
+    de productos qu\xEDmicos como PVC y disolventes. \r\nComo agente blanqueador,
+    se emplea en la industria textil y papelera. \r\nAdem\xE1s, se utiliza en la
+    fabricaci\xF3n de productos farmac\xE9uticos y en la s\xEDntesis de productos
+    org\xE1nicos. \r\nEl cloro es un elemento altamente reactivo y t\xF3xico en su
+    forma gaseosa. \r\nSu isotopo m\xE1s com\xFAn es el cloro-35, con un peque\xF1o
+    porcentaje de cloro-37."

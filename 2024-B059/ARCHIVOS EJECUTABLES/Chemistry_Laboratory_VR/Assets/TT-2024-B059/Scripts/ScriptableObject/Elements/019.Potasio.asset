@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 019.Potasio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 3096744715981043777, guid: b079541113b74334f9c99bfd0ffc46d9, type: 3}
+  Name: Potasio
+  Symbol: K
+  Atomic_Number: 19
+  Atomic_Mass: 39.0983
+  Classification: Alcalino
+  Electron_Configuration: '[Ar] 4s1'
+  Melting_Point: 63.38
+  Boiling_Point: 759
+  Phase: "S\xF3lido"
+  Oxidation_States: 01000000
+  Effect: {fileID: 2100000, guid: a1b76a843da3cc64d8084768f2227209, type: 2}
+  I_Element: {fileID: 21300000, guid: b7435c9dfb66b0247a40783b52794e89, type: 3}
+  Description: "El potasio es un elemento esencial para la vida, fundamental en el
+    funcionamiento celular y en la regulaci\xF3n de la presi\xF3n arterial. \r\nSe
+    emplea en fertilizantes agr\xEDcolas para mejorar el crecimiento de las plantas.
+    \r\nAdem\xE1s, es utilizado en la industria qu\xEDmica para la fabricaci\xF3n
+    de jabones y detergentes. \r\nEn medicina, el cloruro de potasio se usa en tratamientos
+    para reponer electrolitos. \r\nEl potasio tambi\xE9n es importante en la industria
+    alimentaria como conservante y para realzar el sabor. \r\nPor \xFAltimo, se utiliza
+    en la fabricaci\xF3n de vidrio y cer\xE1mica debido a su capacidad para reducir
+    la temperatura de fusi\xF3n."

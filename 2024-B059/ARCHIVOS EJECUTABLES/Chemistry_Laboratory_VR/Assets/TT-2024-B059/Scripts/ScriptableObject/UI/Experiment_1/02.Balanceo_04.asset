@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 02.Balanceo_04
+  m_EditorClassIdentifier: 
+  Tittle: Balanceo de Ecuaciones
+  Data: "Este \xE1cido liberar\xE1 protones que bajar\xE1n el pH de la soluci\xF3n.
+    As\xED, gracias a la\r qu\xEDmica, el indicador nos ayudar\xE1 a visualizar estos
+    cambios con colores vibrantes. \xA1Es como una transformaci\xF3n m\xE1gica, pero
+    con ciencia!"
+  videoClip: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: c299e216218c32f449c96cb4511165ad, type: 3}

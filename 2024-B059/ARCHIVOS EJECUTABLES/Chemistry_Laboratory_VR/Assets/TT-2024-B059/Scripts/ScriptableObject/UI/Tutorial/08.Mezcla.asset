@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21ec4bd5f0f8e241b73dc3d7d2c2468, type: 3}
+  m_Name: 08.Mezcla
+  m_EditorClassIdentifier: 
+  Tittle: "Mezclar L\xEDquidos"
+  Data: "Mezcla los l\xEDquidos vertiendo el matraz con cloruro de sodio en el que
+    contiene azul de metileno. Observa c\xF3mo ambos se combinan en una nueva mezcla
+    l\xEDquida."
+  videoClip: {fileID: 32900000, guid: e90e3df8e8ea41643a0bc2a077446dfb, type: 3}
+  audioClip: {fileID: 8300000, guid: cf020665e81f2c34d84c0731291a14c0, type: 3}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 069.Tulio
+  m_EditorClassIdentifier: 
+  Element: {fileID: 702809126982140179, guid: c2626abb87247934ca6b874eb08a7638, type: 3}
+  Name: Tulio
+  Symbol: Tm
+  Atomic_Number: 69
+  Atomic_Mass: 168.93422
+  Classification: "Lant\xE1nidos"
+  Electron_Configuration: '[Xe] 6s2 4f13'
+  Melting_Point: 1545
+  Boiling_Point: 1950
+  Phase: "S\xF3lido"
+  Oxidation_States: 03000000
+  Effect: {fileID: 2100000, guid: 6fec5b630d0648644bfe0268ca99b450, type: 2}
+  I_Element: {fileID: 21300000, guid: 9727aad47a8bca646aca6103f4e4b66a, type: 3}
+  Description: 

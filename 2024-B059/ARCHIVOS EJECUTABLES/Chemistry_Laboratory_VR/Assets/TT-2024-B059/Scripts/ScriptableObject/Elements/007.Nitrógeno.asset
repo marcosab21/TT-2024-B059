@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "007.Nitr\xF3geno"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 5076978339148502650, guid: b75ca9fabfbee5346bfa32fd69af7d28, type: 3}
+  Name: "Nitr\xF3geno"
+  Symbol: N
+  Atomic_Number: 7
+  Atomic_Mass: 14.00674
+  Classification: No Metal
+  Electron_Configuration: '[He] 2s2 2p3'
+  Melting_Point: -210
+  Boiling_Point: -195.79
+  Phase: Gas
+  Oxidation_States: 0500000004000000030000000200000001000000fffffffffefffffffdffffff
+  Effect: {fileID: 2100000, guid: 9c12538236c66e146951b001c654794d, type: 2}
+  I_Element: {fileID: 21300000, guid: 4276a1f6273715e4b95bee6b204cd1c0, type: 3}
+  Description: "El nitr\xF3geno es esencial en la agricultura como componente de
+    fertilizantes y conservante de alimentos. \r\nEn la industria qu\xEDmica, se
+    utiliza en la producci\xF3n de amon\xEDaco para fertilizantes, explosivos y productos
+    de limpieza. \r\nEn medicina, se emplea en crioterapia y almacenamiento de muestras
+    biol\xF3gicas. Tambi\xE9n es crucial en la fabricaci\xF3n de semiconductores
+    y en la metalurgia. \r\nAdem\xE1s, su capacidad para formar compuestos org\xE1nicos
+    es fundamental en biolog\xEDa y qu\xEDmica.\r\nComo componente principal del
+    aire, es vital para el sustento de la vida en la Tierra.ial en la biolog\xEDa
+    y la qu\xEDmica org\xE1nica."

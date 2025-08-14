@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: 016.Azufre
+  m_EditorClassIdentifier: 
+  Element: {fileID: 3761705321429706426, guid: c07df51c1bdfae343b773a246b89d8ef, type: 3}
+  Name: Azufre
+  Symbol: S
+  Atomic_Number: 16
+  Atomic_Mass: 32.066
+  Classification: No Metal
+  Electron_Configuration: '[Ne] 3s2 3p4'
+  Melting_Point: 115.21
+  Boiling_Point: 44.6
+  Phase: "S\xF3lido"
+  Oxidation_States: 0600000004000000feffffff
+  Effect: {fileID: 2100000, guid: 9c12538236c66e146951b001c654794d, type: 2}
+  I_Element: {fileID: 21300000, guid: 2292c5e5914a4914aa664d1af5a7c13c, type: 3}
+  Description: "El azufre se emplea en la producci\xF3n de \xE1cido sulf\xFArico,
+    fundamental en la industria qu\xEDmica y de fertilizantes. \r\nTambi\xE9n se
+    utiliza en la fabricaci\xF3n de caucho vulcanizado para neum\xE1ticos y en la
+    producci\xF3n de fosfatos de hierro y acero. \r\nAdem\xE1s, es un componente
+    esencial en la producci\xF3n de medicamentos, productos de cuidado de la piel
+    y pesticidas. \r\nEl azufre se encuentra en la naturaleza en forma de minerales
+    como la pirita y la galena. \r\nEn la industria, se utiliza como agente blanqueador
+    en la fabricaci\xF3n de papel y como aditivo en la producci\xF3n de alimentos
+    para animales.\r\n"

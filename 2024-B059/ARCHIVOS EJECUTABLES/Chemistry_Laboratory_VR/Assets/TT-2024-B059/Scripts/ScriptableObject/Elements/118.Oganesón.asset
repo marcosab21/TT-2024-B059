@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3089af30f0cbd4cbdc4ffff1daafd3, type: 3}
+  m_Name: "118.Oganes\xF3n"
+  m_EditorClassIdentifier: 
+  Element: {fileID: 7326048339131751152, guid: 60ab6efd4a3258b4bb31ba248028d075, type: 3}
+  Name: "Oganes\xF3n"
+  Symbol: Og
+  Atomic_Number: 118
+  Atomic_Mass: 294
+  Classification: Gases Nobles
+  Electron_Configuration: '[Rn] 7s2 5f14 6d10 7p6'
+  Melting_Point: 0
+  Boiling_Point: 80
+  Phase: Gas (Esperado)
+  Oxidation_States: 06000000040000000200000001000000ffffffff
+  Effect: {fileID: 2100000, guid: ea83c4266d0d35a428c045e5f53c4816, type: 2}
+  I_Element: {fileID: 21300000, guid: 35dfd5efc601fc647ae1662d482cf970, type: 3}
+  Description: 
